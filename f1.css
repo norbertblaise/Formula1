@@ -44,6 +44,13 @@ a.active .linkText:hover{
     border-left: 0;
     border-bottom-right-radius: 10px;
 }
+
+.topStory{
+    margin-top: 20px;
+    border-top: 10px  solid #e10600;
+    border-right: 10px solid #e10600;
+    border-top-right-radius: 15px;
+}
 /*make other news stories appear in two columns 
 by using flex-wrap in the container*/
 .otherNewsContainer{
@@ -53,7 +60,7 @@ by using flex-wrap in the container*/
 }
 .featureArticle{
     width: 50%;
-    padding: 0px 5px;
+    padding: 0px 10px;
 }
 
 .navHeader{
@@ -63,7 +70,42 @@ by using flex-wrap in the container*/
 img {
     width: 100%;
     height: auto;
+    display: block;
+
 }
+/*adding hover zoom to images and captions animations*/
+.featureArticle img{
+    position: relative;
+    transition: .5s;/*animation*/
+}
+.storyImage{
+    overflow: hidden;
+
+}
+.topStory img{
+    overflow: hidden;
+    position: relative;
+    transition: .5s;/*animation*/
+}
+.topStory img:hover, .featureArticle img:hover{
+    transform: scale(1.06);
+    
+
+}
+
+.caption{
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 15px 15px 30px;
+    border-right: 1px solid ;
+    border-bottom: 1px solid;
+    border-bottom-right-radius: 15px;
+    border-color: #d0d0d2;
+
+}
+/*caption animation*/
+
+
 #logo{
     padding: 10px;
     width: 80%;
