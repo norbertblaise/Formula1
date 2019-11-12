@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="f1.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <script src="https://kit.fontawesome.com/678af57af1.js" crossorigin="anonymous"></script>
     <title>F1</title>
 </head>
 <body>
-    <div class="main">
-        <header>
+    <div class="main col-12">
+        <div class="navHeader d-flex">
           <!--  <nav>
                 <button class="navitem" >Latest</button>
                 <button class="navitem" >Standings</button>
@@ -20,14 +21,122 @@
                 <button class="navitem" ></button>
             </nav>
         -->
-        <ul class="nav nav-pills">
-            <li class="active"><a href="#">Latest</a></li>
-            <li><a href="standing.html">Standings</a></li>
-            <li><a href="drivers.html">Drivers</a></li>
-            <li><a href="Teams.html">Teams</a></li>
-            <li><a href="Races.html">Races</a></li>
-        </ul>
-        </header>
+        <div class="col-md-2">
+                <img id="logo" src="f1_logo.svg" alt="">
+        </div>
+        <div class="navlist col-md-6">
+                <a class="active" href="#"><span class="linkText">Latest</span></a>
+                        <a class="navlink"  href="standing.html"><span class="linkText">Standings</span></a>
+                        <a class="navlink" href="drivers.html"><span class="linkText">Drivers</span></a>
+                        <a class="navlink" href="Teams.html"><span class="linkText">Teams</span></a>
+                        <a class="navlink" href="Races.html"><span class="linkText">Races</span></a>
+        </div>
+    </div>
+        <div class="newsContainer col-12 d-flex">
+            <div class="topStory col-6">
+                <h1>5 Reasons we love the Brazilian Grand Prix</h1>
+                <img src="brazilgp.jpg" alt="Brazilian Grand Prix">
+            </div>
+            <div class="otherNewsContainer col-6 ">
+                <div class="featureArticle col-3" >
+            
+                    <img src="VET-HAM.jpg" alt="Vettel and Hamilton">
+                    <p>NEWS</p>
+                    <p>Hamilton: 'Huge amount of respect' between Vettel and I</p>
+                </div>
+
+                <div class="featureArticle col-3" >
+                        
+                        <img src="2018braGP.jpg" alt="Hamilton brazil 2018">
+                        <p>VIDEO</p>
+                        <p>WATCH: Re-live last year's race in Brazil</p>
+                    </div>
+
+                    <!--force the column to break to new line-->
+                    <div class="w-100"></div>
+
+                    <div class="featureArticle col-3">
+                        <img src="renault rs19.jpg"    alt="Danny RIC flying in his R.S. 19">
+                        <p>NEWS</p>
+                        <p>Abiteboul: Need for 'Stronger technical leadership' sparked Renault aero restructure. </p>
+                    </div>
+
+                    <div class="featureArticle col-3">
+                        <img src="dubaiExpoF1.jpg" alt="Dubai expo">
+                        <p>NEWS</p>
+                        <p>F1 announces Official sponsorship deal with Expo Dubai 2020</p>
+                    </div>
+
+                    <!--force the column to break to the next line-->
+                    <div class="w-100"></div>
+
+                    <div class="featureArticle col-3">
+                        <img src="VET-SCH.jpg" alt="Vettel and Mick Schumacher">
+                        <p>NEWS</p>
+                        <p>Mick Schumacher:'What my dad was to Sebastian, he is for me'</p>
+                    </div>
+
+                    <div class="featureArticle col-3">
+                        <img src="Senna tribute.jpg" alt="tribute to Ayrton Senna">
+                        <p>VIDEO</p>
+                        <p>WATCH: Spectacular and emotional tribute to Ayrton Senna in Sao Paolo</p>
+                    </div>
+            </div>
+        </div>
+        <footer class="f1-footer">
+            <div class="fl-footer-top d-flex">
+                <p>DOWNLOAD THE OFFICIAL F1 APP</p>
+                <ul>
+                    <li>
+                        <a  href="https://play.google.com/store/apps/details?id=com.softpauer.f1timingapp2014.basic&hl=en_GB">
+                        <img src="https://www.formula1.com/etc/designs/fom-website/images/svg/google-play-badge.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.formula1.com/etc/designs/fom-website/images/svg/google-play-badge.svg">
+                        <img src="https://www.formula1.com/etc/designs/fom-website/images/svg/download-on-the-app-store-apple.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div class="col-md-5">
+                    <ul class="social d-table float-md-right">
+                        <li>
+                            <a href="https://www.facebook.com/Formula1">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/f1">
+                                <i class="fab fa-twitter-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/f1/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/F1">
+                                <i class="fab fa-youtube-square"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="f1-footer-middle">
+                <div>
+                        <ul class="navbottom">
+                                <li class="active"><a href="#">Latest</a></li>
+                                <li><a href="standing.html">Standings</a></li>
+                                <li><a href="drivers.html">Drivers</a></li>
+                                <li><a href="Teams.html">Teams</a></li>
+                                <li><a href="Races.html">Races</a></li>
+                            </ul>
+                </div>
+            </div>
+            <div class="f1-footer-bottom"></div>
+            <div class="f1-footer-baseline"></div>
+        </footer>
     </div>
 </body>
 </html>
