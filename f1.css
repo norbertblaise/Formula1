@@ -74,6 +74,10 @@ img {
 
 }
 /*adding hover zoom to images and captions animations*/
+.newsLink, .newsLink:hover{
+    text-decoration: none;
+    color: black;
+}
 .featureArticle img{
     position: relative;
     transition: .5s;/*animation*/
@@ -89,8 +93,6 @@ img {
 }
 .topStory img:hover, .featureArticle img:hover{
     transform: scale(1.06);
-    
-
 }
 
 .caption{
@@ -101,9 +103,20 @@ img {
     border-bottom: 1px solid;
     border-bottom-right-radius: 15px;
     border-color: #d0d0d2;
+    transition: .5s;
+    position: relative;
+    overflow: visible;
 
 }
 /*caption animation*/
+.newsLink, .caption:hover{
+    margin-top: -15px;
+    overflow: visible;
+    padding-bottom: 45px;
+    border-color: #e10600;
+    
+    
+}
 
 
 #logo{
