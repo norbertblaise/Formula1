@@ -78,12 +78,28 @@ img {
     text-decoration: none;
     color: black;
 }
+/*make image zoom without spilling over*/
+.newsLink:hover > .storyImage img{
+    transform: scale(1.06);
+    transition: .5s; /*animation*/
+
+}
+/*make caption rise*/
+.newsLink:hover > .caption{
+    margin-top: -15px;
+    overflow: visible;
+    padding-bottom: 45px;
+    border-color: #e10600;
+}
+/*
 .featureArticle img{
     position: relative;
-    transition: .5s;/*animation*/
+    transition: .5s;/*animation
 }
+*/
 .storyImage{
     overflow: hidden;
+   
 
 }
 .topStory img{
@@ -91,7 +107,7 @@ img {
     position: relative;
     transition: .5s;/*animation*/
 }
-.topStory img:hover, .featureArticle img:hover{
+.topStory img:hover/*, .storyImage img:hover*/{
     transform: scale(1.06);
 }
 
@@ -108,7 +124,7 @@ img {
     overflow: visible;
 
 }
-/*caption animation*/
+/*caption animation
 .newsLink, .caption:hover{
     margin-top: -15px;
     overflow: visible;
@@ -116,7 +132,7 @@ img {
     border-color: #e10600;
     
     
-}
+}*/
 
 
 #logo{
@@ -124,3 +140,45 @@ img {
     width: 80%;
 
 }
+/*styling the footer*/
+.f1-footer{
+    background-color: #15151E;
+    color: #fff;
+}
+.f1-footer ul{
+    list-style-type: none;
+    
+}
+.social{
+    color: #fff;
+    height: 100%;
+}
+.c
+.f1-footer-top{
+    background-color: #38383f;
+    padding-top: 10px;
+}
+.storeLink{
+    width: 135px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.label{
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    color: #e10600;
+}
+
+.storeLabel{
+    max-width: 105px;
+    margin: 4px 0px;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 0px;
+    line-height: 15px;
+    font-weight: normal;
+}
+
