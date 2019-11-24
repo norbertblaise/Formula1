@@ -1,16 +1,44 @@
 @import url(headerFooter.css);
+.main{
+    background:  rgb(236, 235, 235);
+}
 table{
     width: 100%;
+    background: #fff;
 }
 /* give even rows different background colors*/
 tr:nth-child(even){
-background: rgb(194, 194, 194);
+background: rgb(236, 235, 235);
 }
 
-.racesWrapper, .leaderboard, .teamStandings{
+.racesWrapper, .driversWrapper, .teamsWrapper{
     padding: 20px;
+}
+.tableCard{
+    margin: 70px 30px;
+    background: #fff;
 }
 td, th{
     padding: 15px 15px 12px;
     font-size: 12px;
+    
+}
+/*bolden the races td except for the date*/
+ td{
+    font-weight: bold;
+    color: #4a4a4a;
+}
+th{
+    color: gray;
+    font-size: 10px;
+}
+.racesWrapper td:nth-child(2){
+    font-weight: normal;
+}
+/*bolden all drivers td execpt for POS*/
+.driversWrapper td:nth-child(1), .teamsWrapper td:nth-child(1){
+    font-weight: normal;
+}
+.driversWrapper td:nth-child(4){
+    color: gray;
 }
