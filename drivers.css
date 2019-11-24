@@ -1,1 +1,26 @@
 @import url(headerFooter.css);
+/*make drivers appear in two columns*/
+.driversList{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.f1Driver{
+    width: 50%;
+    overflow: hidden;
+}
+/* style the driver pics */
+.driverPic {
+    height: 200px;
+    overflow: hidden;
+    transform: scale(1.05);
+}
+.driverNum{
+    font-size: 42px;
+}
+
+.driverTeam{
+font-size: 16px;
+}
+
+
