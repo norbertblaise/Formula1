@@ -1,1 +1,16 @@
 @import url(headerFooter.css);
+table{
+    width: 100%;
+}
+/* give even rows different background colors*/
+tr:nth-child(even){
+background: rgb(194, 194, 194);
+}
+
+.racesWrapper, .leaderboard, .teamStandings{
+    padding: 20px;
+}
+td, th{
+    padding: 15px 15px 12px;
+    font-size: 12px;
+}
