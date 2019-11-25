@@ -73,6 +73,11 @@ padding-left: 15px;
     background: #fff;
     
 }
+h1{
+    padding: 15px;
+    padding-left: 30px;
+    font-size: 48px !important;
+}
 .driverPicLarge{
     width: 100%;
 }

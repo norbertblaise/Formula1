@@ -1,1 +1,92 @@
 @import url(headerFooter.css);
+.teamsWrapper{
+    display: flex;
+    padding: 0px !important;
+}
+.teamsList{
+padding: 0px !important;
+}
+.teamsProfile{
+    padding: 0px !important;
+}
+.carPic{
+    overflow: hidden;
+    transition: .4s;
+}
+.f1Team{
+    overflow: hidden;
+}
+/* add zoom onhover */
+.f1Team:hover > .carPic{
+    transform: scale(1.06);
+    cursor: pointer;
+}
+
+/* changedetails colors */
+.f1Team:hover > .teamDetails, .f1Team:hover table{
+    background: rgb(4, 4, 10);
+    
+    color: #fff;
+    cursor: pointer;
+}
+/* styling team details */
+.teamDetails{
+padding: 25px 10px;
+overflow: visible;
+position: relative;
+background: #fff;
+border-top: 5px solid;
+
+}
+.teamOverview{
+    width: 50%;
+    
+}
+.teamDetails table{
+    padding-top: 30px;
+    width: 50%;
+    margin-left: 30px;
+    color: #808080;
+}
+.flag{
+    height: 30px;
+    width: auto;
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-left: 0px;
+    margin-right: 8px;
+    
+}
+ul{
+    list-style-type: none;
+}
+li{
+    margin-bottom: 13px;
+    font-size: 14px;
+}
+h2{
+    margin-bottom: 25px;
+}
+
+
+.teamLogo{
+    padding-right: 65px;
+}
+/* table styling */
+th{
+    padding: 0px 3px 26px 3px;
+    font-size: 10px;
+    display: table-cell;
+    white-space: pre-line;
+}
+td{
+    padding: 0px 3px 26px 3px;
+    font-size: 20px;
+
+}
+tr:nth-child(odd){
+    border-bottom: 1.5px solid #808080;
+}
+th:nth-child(2){
+   padding: 30px 3px 26px;
+}

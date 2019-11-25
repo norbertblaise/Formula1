@@ -1363,13 +1363,13 @@
   // Declare all variables
   let i, profileWrapper, f1Driver;
 
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("profileWrapper");
+  // Get all elements with class="profileWrapper" and hide them
+  profileWrapper = document.getElementsByClassName("profileWrapper");
   for (i = 0; i < profileWrapper.length; i++) {
     profileWrapper[i].style.display = "none";
   }
 
-  // Get all elements with class="tablinks" and remove the class "active"
+  // Get all elements with class="f1Driver" and remove the class "active"
   f1Driver = document.getElementsByClassName("f1Driver");
   for (i = 0; i < f1Driver.length; i++) {
     f1Driver[i].className = f1Driver[i].className.replace(" active", "");
