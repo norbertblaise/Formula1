@@ -1357,10 +1357,11 @@
                     </div>
                 </footer>
     </div>
+
     <script>
-    function openProfile(evt, driverName) {
+    function openProfile(event, driverName) {
   // Declare all variables
-  var i, profileWrapper, driverLink;
+  let i, profileWrapper, f1Driver;
 
   // Get all elements with class="tabcontent" and hide them
   tabcontent = document.getElementsByClassName("profileWrapper");
@@ -1369,9 +1370,9 @@
   }
 
   // Get all elements with class="tablinks" and remove the class "active"
-  driverLink = document.getElementsByClassName("driverLink");
-  for (i = 0; i < driverLink.length; i++) {
-    driverLink[i].className = driverLink[i].className.replace(" active", "");
+  f1Driver = document.getElementsByClassName("f1Driver");
+  for (i = 0; i < f1Driver.length; i++) {
+    f1Driver[i].className = f1Driver[i].className.replace(" active", "");
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
