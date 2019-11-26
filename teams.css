@@ -1,13 +1,19 @@
 @import url(headerFooter.css);
+@import url(drivers.css);
+.main{
+    background: rgb(236, 235, 235);
+
+}
 .teamsWrapper{
     display: flex;
-    padding: 0px !important;
+    
 }
 .teamsList{
 padding: 0px !important;
+flex-wrap: wrap;
 }
 .teamsProfile{
-    padding: 0px !important;
+    
 }
 .carPic{
     overflow: hidden;
@@ -15,6 +21,10 @@ padding: 0px !important;
 }
 .f1Team{
     overflow: hidden;
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+    border-color: transparent;
+
 }
 /* add zoom onhover */
 .f1Team:hover > .carPic{
@@ -29,6 +39,7 @@ padding: 0px !important;
     color: #fff;
     cursor: pointer;
 }
+
 /* styling team details */
 .teamDetails{
 padding: 25px 10px;
@@ -59,10 +70,52 @@ border-top: 5px solid;
 }
 ul{
     list-style-type: none;
+    padding-left: 15px;
 }
 li{
     margin-bottom: 13px;
     font-size: 14px;
+    display: flex;
+}
+/* div with helmet icon */
+.helmetIcon{
+    margin-right: 18px;
+    height: 20px;
+    width: 20px ;
+    background: url(racing-helmet.png);
+    background-size: 20px 20px;
+}
+/* onhover swap background image for white icon */
+.f1Team:hover  .helmetIcon{
+    background: url(racing-helmet\ \(1\).png);
+    background-size: 20px 20px;
+    
+    }
+.podium{
+    margin-top: 18px;
+    margin-right: 5px;
+    height: 20px;
+    width: 20px ;
+    background: url(podium.png);
+    background-size: 21px 21px;
+}
+
+.f1Team:hover .podium{
+    background: url(podium\ \(1\).png);
+    background-size: 21px 21px;
+
+}
+.trophy{
+    margin-right: 5px;
+    margin-top: 18px;
+    height: 20px;
+    width: 20px ;
+    background: url(trophy-variant-outline.png);
+    background-size: 20px 20px;
+}
+.f1Team:hover .trophy{
+    background: url(trophy-variant-outline\ \(1\).png);
+    background-size: 20px 20px;
 }
 h2{
     margin-bottom: 25px;
@@ -73,20 +126,40 @@ h2{
     padding-right: 65px;
 }
 /* table styling */
-th{
+.f1Team th{
     padding: 0px 3px 26px 3px;
     font-size: 10px;
     display: table-cell;
+    display: flex;
     white-space: pre-line;
 }
-td{
+.f1Team td{
     padding: 0px 3px 26px 3px;
     font-size: 20px;
 
 }
-tr:nth-child(odd){
+
+.f1Team tr:nth-child(odd){
     border-bottom: 1.5px solid #808080;
 }
-th:nth-child(2){
+.f1Team th:nth-child(2){
    padding: 30px 3px 26px;
+}
+/* styling team profile details */
+.profileContainer{
+    background: #fff;
+}
+.profileContainer th{
+    padding: 4px 0px 4px 10px;
+    font-size: 15px;
+}
+.profileContainer td{
+    padding-left: 5px;
+    font-size: 15px;
+}
+.profileContainer table{
+    margin-bottom: 20px;
+}
+.teamDrivers{
+    display: flex;
 }
