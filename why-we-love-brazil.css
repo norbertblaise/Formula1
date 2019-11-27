@@ -1,0 +1,58 @@
+@import url(headerFooter.css);
+/* styling headline nad by line */
+h1{
+    margin-bottom: 30px;
+}
+.articleTitle{
+    padding: 0px 10px;
+    padding-top: 40px;
+}
+.articleTitle .tag{
+    padding-left: 8px;
+    font-size: 12px;
+    color: #67676d;
+}
+section{
+    margin-bottom: 20px;
+    padding-left: 10px;
+    background: #f3f3f3;
+}
+.authorTitle{
+    color: #67676d;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.authorName{
+    color: #e10600;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.date{
+    color: #949498;
+    font-size: 13px;
+}
+/* styling coverImage */
+.coverImage img{
+    border-top: 10px solid #e10600;
+    border-right: 10px solid #e10600;
+    border-bottom: none;
+    border-left: none;
+    border-top-right-radius: 25px;
+    
+}
+/* styling otherarticles */
+.otherArticles{
+    color: #15151e;
+}
+.otherArticles h2{
+    text-align: left;
+    font-size: 24px;
+    padding: 15px 20px 0px 0px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-color: #d0d0d2;
+    border-top-right-radius: 25px;
+
+}

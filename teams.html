@@ -1,1216 +1,1280 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="teams.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/678af57af1.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Teams</title>
 </head>
+
 <body>
     <div class="main col-12">
-            <div class="navHeader d-flex">
-                  <div class="col-md-2">
-                          <img id="logo" src="f1_logo.svg" alt="">
-                  </div>
-                  <div class="navlist col-md-6">
-                          <a class="navlink" href="#"><span class="linkText">Latest</span></a>
-                                  <a class="navlink"  href="standings.html"><span class="linkText">Standings</span></a>
-                                  <a class="navlink" href="drivers.html"><span class="linkText">Drivers</span></a>
-                                  <a class="active" href="Teams.html"><span class="linkText">Teams</span></a>
-                                  <a class="navlink" href="Races.html"><span class="linkText">Races</span></a>
-                  </div>
-              </div>
-            <div class="teamsContainer">
-                <h1>F1 Teams</h1>
-                <div class="teamsWrapper col-12">
-                    <div class="teamsList col-5 d-flex">
-                        <div class="f1Team" onclick="openProfile(event, 'Mercedes')" id="defaultOpen">
-                            <div class="carPic"> 
-                                    <img src="Mercedes.jpg" alt="">
+        <div class="navHeader d-flex">
+            <div class="col-md-2">
+                <img id="logo" src="f1_logo.svg" alt="">
+            </div>
+            <div class="navlist col-md-6">
+                <a class="navlink" href="#"><span class="linkText">Latest</span></a>
+                <a class="navlink" href="standings.html"><span class="linkText">Standings</span></a>
+                <a class="navlink" href="drivers.html"><span class="linkText">Drivers</span></a>
+                <a class="active" href="Teams.html"><span class="linkText">Teams</span></a>
+                <a class="navlink" href="Races.html"><span class="linkText">Races</span></a>
+            </div>
+        </div>
+        <div class="teamsContainer">
+            <h1>F1 Teams</h1>
+            <div class="teamsWrapper col-12">
+                <div class="teamsList col-5 d-flex">
+                    <div class="f1Team" onclick="openProfile(event, 'Mercedes')" id="defaultOpen">
+                        <div class="carPic">
+                            <img src="Mercedes.jpg" alt="">
+                        </div>
+                        <div class="teamDetails d-flex" style="border-color: #00D2BE;">
+                            <div class="teamOverview ">
+                                <h2 class="d-flex"> <img class="flag" src="GER.jpg" alt=""> Mercedes</h2>
+                                <ul>
+                                    <li>
+                                        <div class="helmetIcon"></div> Lewis Hamilton
+                                    </li>
+                                    <li>
+                                        <div class="helmetIcon"></div>Valtterri Bottas
+                                    </li>
+                                </ul>
+                                <img class="teamLogo" src="mercedeslogo.jpg" alt="">
                             </div>
-                            <div class="teamDetails d-flex" style="border-color: #00D2BE;">
-                                <div class="teamOverview ">
-                                    <h2 class="d-flex"> <img class="flag" src="GER.jpg" alt=""> Mercedes</h2>
-                                    <ul>
-                                        <li> <div class="helmetIcon"></div> Lewis Hamilton</li>
-                                        <li> <div class="helmetIcon"></div>Valtterri Bottas</li>
-                                    </ul>
-                                    <img class="teamLogo" src="mercedeslogo.jpg" alt="">
-                                </div>
-                                <table>
-                                    <tr>                     
-                                        <th>
-                                            <div class="podium"></div>
-                                            Podium 
-                                            Finishes
-                                        </th>
-                                        <td>193</td>
-                                    </tr>
-                                    <tr>
-                                        
-                                        <th>
-                                            <div class="trophy"></div>
-                                            Championship 
-                                            Titles
-                                        </th>
-                                        <td>6</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="f1Team" onclick="openProfile(event, 'Ferrari')">
-                            <div class="carPic"> 
-                                <!-- add teams car -->
-                                <img src="Ferrari.jpg" alt="">
-                            </div>
-                                                                <!--add team color-->
-                            <div class="teamDetails d-flex" style="border-color:#dc0000 ;">
-                                <div class="teamOverview ">
-                                    <h2 class="d-flex"> <!--add teams country flag--><img class="flag" src="ITA.jpg" alt=""> <!--add team name-->Ferrari</h2>
-                                    <ul>
-                                        <!-- add drivers -->
-                                        <li> <div class="helmetIcon"></div> Sebastian Vettel</li>
-                                        <li> <div class="helmetIcon"></div> Charles Leclerc</li>
-                                    </ul>
-                                    <!-- add team logo -->
-                                    <img class="teamLogo" src="ferrarilogo.jpg" alt="">
-                                </div>
-                                    <table>
-                                        <tr>                     
-                                            <th>
-                                                <div class="podium"></div>
-                                                Podium 
-                                                Finishes
-                                            </th>
-                                            <!-- add team podiums -->
-                                            <td>781</td>
-                                        </tr>
-                                        <tr>
-                                            
-                                            <th>
-                                                <div class="trophy"></div>
-                                                Championship 
-                                                Titles
-                                            </th>
-                                            <!-- add team titles -->
-                                            <td>16</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                        </div>
-                        <div class="f1Team" onclick="openProfile(event, 'Redbull')">
-                            <div class="carPic"> 
-                                <!-- add teams car -->
-                                <img src="Redbull.jpg" alt="">
-                            </div>
-                                                            <!--add team color-->
-                            <div class="teamDetails d-flex" style="border-color: #1E41FF;">
-                                <div class="teamOverview ">
-                                    <h2 class="d-flex"> <!--add teams country flag--><img class="flag" src="AUSTRIA.gif" alt=""> <!--add team name-->Red Bull Racing</h2>
-                                    <ul>
-                                        <!-- add drivers -->
-                                        <li> <div class="helmetIcon"></div> Max Verstappen</li>
-                                        <li> <div class="helmetIcon"></div> Alexander Albon</li>
-                                    </ul>
-                                    <!-- add team logo -->
-                                    <img class="teamLogo" src="redbulllogo.jpg" alt="">
-                                </div>
-                                <table>
-                                    <tr>                     
-                                        <th>
-                                            <div class="podium"></div>
-                                            Podium 
-                                            Finishes
-                                        </th>
-                                            <!-- add team podiums -->
-                                        <td>169</td>
-                                        </tr>
-                                        <tr>          
-                                        <th>
-                                            <div class="trophy"></div>
-                                            Championship 
-                                            Titles
-                                        </th>
-                                        <!-- add team titles -->
-                                        <td>4</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="f1Team" onclick="openProfile(event, 'Mclaren')">
-                            <div class="carPic"> 
-                                <!-- add teams car -->
-                                <img src="Mclaren.jpg" alt="">
-                            </div>
-                                                            <!--add team color-->
-                            <div class="teamDetails d-flex" style="border-color: #FF8700;">
-                                <div class="teamOverview ">
-                                    <h2 class="d-flex"> <!--add teams country flag--><img class="flag" src="GBR.jpg" alt=""> <!--add team name-->Mclaren</h2>
-                                    <ul>
-                                        <!-- add drivers -->
-                                        <li> <div class="helmetIcon"></div> Carlos Sainz</li>
-                                        <li> <div class="helmetIcon"></div> Lando Norris</li>
-                                    </ul>
-                                    <!-- add team logo -->
-                                    <img class="teamLogo" src="mclarenlogo.jpg" alt="">
-                                </div>
-                                <table>
-                                    <tr>                     
-                                        <th>
-                                            <div class="podium"></div>
-                                            Podium 
-                                            Finishes
-                                        </th>
-                                            <!-- add team podiums -->
-                                        <td>486</td>
-                                        </tr>
-                                        <tr>          
-                                        <th>
-                                            <div class="trophy"></div>
-                                            Championship 
-                                            Titles
-                                        </th>
-                                        <!-- add team titles -->
-                                        <td>8</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="f1Team" onclick="openProfile(event, 'Renault')">
-                                <div class="carPic"> 
-                                    <!-- add teams car -->
-                                    <img src="Renault.jpg" alt="">
-                                </div>
-                                                                <!--add team color-->
-                                <div class="teamDetails d-flex" style="border-color: #FFF500;">
-                                    <div class="teamOverview ">
-                                        <h2 class="d-flex"> <!--add teams country flag--><img class="flag" src="FRE.gif" alt=""> <!--add team name-->Renault</h2>
-                                        <ul>
-                                            <!-- add drivers -->
-                                            <li> <div class="helmetIcon"></div> Nico Hulkenberg</li>
-                                            <li> <div class="helmetIcon"></div> Daniel Ricciardo</li>
-                                        </ul>
-                                        <!-- add team logo -->
-                                        <img class="teamLogo" src="renaultlogo.jpg" alt="">
-                                    </div>
-                                    <table>
-                                        <tr>                     
-                                            <th>
-                                                <div class="podium"></div>
-                                                Podium 
-                                                Finishes
-                                            </th>
-                                                <!-- add team podiums -->
-                                            <td>59</td>
-                                            </tr>
-                                            <tr>          
-                                            <th>
-                                                <div class="trophy"></div>
-                                                Championship 
-                                                Titles
-                                            </th>
-                                            <!-- add team titles -->
-                                            <td>2</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                        </div>
-                        <div class="f1Team" onclick="openProfile(event, 'ToroRosso')">
-                                <div class="carPic"> 
-                                    <!-- add teams car -->
-                                    <img src="Toro Rosso.jpg" alt="">
-                                </div>
-                                                                <!--add team color-->
-                                <div class="teamDetails d-flex" style="border-color: #469bff;">
-                                    <div class="teamOverview ">
-                                        <h2 class="d-flex"> <!--add teams country flag--><img class="flag" src="ITA.jpg" alt=""> <!--add team name-->Toro Rosso</h2>
-                                        <ul>
-                                            <!-- add drivers -->
-                                            <li> <div class="helmetIcon"></div> Daniil Kvyat</li>
-                                            <li> <div class="helmetIcon"></div> Pierre Gasly</li>
-                                        </ul>
-                                        <!-- add team logo -->
-                                        <img class="teamLogo" src="tororossologo.jpg" alt="">
-                                    </div>
-                                    <table>
-                                        <tr>                     
-                                            <th>
-                                                <div class="podium"></div>
-                                                Podium 
-                                                Finishes
-                                            </th>
-                                                <!-- add team podiums -->
-                                            <td>3</td>
-                                            </tr>
-                                            <tr>          
-                                            <th>
-                                                <div class="trophy"></div>
-                                                Championship 
-                                                Titles
-                                            </th>
-                                            <!-- add team titles -->
-                                            <td>N/A</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                        </div>
-                        <div class="f1Team" onclick="openProfile(event, 'RacingPoint')">
-                                <div class="carPic"> 
-                                    <!-- add teams car -->
-                                    <img src="Racing Point.jpg" alt="">
-                                </div>
-                                                                <!--add team color-->
-                                <div class="teamDetails d-flex" style="border-color: #f596c8;">
-                                    <div class="teamOverview ">
-                                        <h2 class="d-flex"> <!--add teams country flag--><img class="flag" src="GBR.jpg" alt=""> <!--add team name-->Racing Point</h2>
-                                        <ul>
-                                            <!-- add drivers -->
-                                            <li> <div class="helmetIcon"></div> Sergio Perez</li>
-                                            <li> <div class="helmetIcon"></div> Lance Stroll</li>
-                                        </ul>
-                                        <!-- add team logo -->
-                                        <img class="teamLogo" src="racingpointlogo.jpg" alt="">
-                                    </div>
-                                    <table>
-                                        <tr>                     
-                                            <th>
-                                                <div class="podium"></div>
-                                                Podium 
-                                                Finishes
-                                            </th>
-                                                <!-- add team podiums -->
-                                            <td>N/A</td>
-                                            </tr>
-                                            <tr>          
-                                            <th>
-                                                <div class="trophy"></div>
-                                                Championship 
-                                                Titles
-                                            </th>
-                                            <!-- add team titles -->
-                                            <td>N/A</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                        </div>
-                        <div class="f1Team" onclick="openProfile(event, 'AlfaRomeo')">
-                                <div class="carPic"> 
-                                    <!-- add teams car -->
-                                    <img src="Alfa Romeo.jpg" alt="">
-                                </div>
-                                                                <!--add team color-->
-                                <div class="teamDetails d-flex" style="border-color: #9b0000;">
-                                    <div class="teamOverview ">
-                                        <h2 class="d-flex"> <!--add teams country flag--><img class="flag" src="SUI.gif" alt=""> <!--add team name-->Alfa Romeo Racing</h2>
-                                        <ul>
-                                            <!-- add drivers -->
-                                            <li> <div class="helmetIcon"></div> Kimi Raikkonen</li>
-                                            <li> <div class="helmetIcon"></div> Antonio Giovinazzi</li>
-                                        </ul>
-                                        <!-- add team logo -->
-                                        <img class="teamLogo" src="alfaromeologo.png" alt="">
-                                    </div>
-                                    <table>
-                                        <tr>                     
-                                            <th>
-                                                <div class="podium"></div>
-                                                Podium 
-                                                Finishes
-                                            </th>
-                                                <!-- add team podiums -->
-                                            <td>27</td>
-                                            </tr>
-                                            <tr>          
-                                            <th>
-                                                <div class="trophy"></div>
-                                                Championship 
-                                                Titles
-                                            </th>
-                                            <!-- add team titles -->
-                                            <td>N/A</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                        </div>
-                        <div class="f1Team" onclick="openProfile(event, 'Haas')">
-                                <div class="carPic"> 
-                                    <!-- add teams car -->
-                                    <img src="Haas.jpg" alt="">
-                                </div>
-                                                                <!--add team color-->
-                                <div class="teamDetails d-flex" style="border-color: #bd9e57;">
-                                    <div class="teamOverview ">
-                                        <h2 class="d-flex"> <!--add teams country flag--><img class="flag" src="USA.jpg" alt=""> <!--add team name-->Haas F1 Team</h2>
-                                        <ul>
-                                            <!-- add drivers -->
-                                            <li> <div class="helmetIcon"></div> Romain Grosjean</li>
-                                            <li> <div class="helmetIcon"></div> Kevin Magnussen</li>
-                                        </ul>
-                                        <!-- add team logo -->
-                                        <img class="teamLogo" src="haaslogo.png" alt="">
-                                    </div>
-                                    <table>
-                                        <tr>                     
-                                            <th>
-                                                <div class="podium"></div>
-                                                Podium 
-                                                Finishes
-                                            </th>
-                                                <!-- add team podiums -->
-                                            <td>N/A</td>
-                                            </tr>
-                                            <tr>          
-                                            <th>
-                                                <div class="trophy"></div>
-                                                Championship 
-                                                Titles
-                                            </th>
-                                            <!-- add team titles -->
-                                            <td>N/A</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                        </div>
-                        <div class="f1Team" onclick="openProfile(event, 'Williams')">
-                                <div class="carPic"> 
-                                    <!-- add teams car -->
-                                    <img src="Williams.jpg" alt="">
-                                </div>
-                                                                <!--add team color-->
-                                <div class="teamDetails d-flex" style="border-color: #fff;">
-                                    <div class="teamOverview ">
-                                        <h2 class="d-flex"> <!--add teams country flag--><img class="flag" src="GBR.jpg" alt=""> <!--add team name-->Williams</h2>
-                                        <ul>
-                                            <!-- add drivers -->
-                                            <li> <div class="helmetIcon"></div> Robert Kubica</li>
-                                            <li> <div class="helmetIcon"></div> George russell</li>
-                                        </ul>
-                                        <!-- add team logo -->
-                                        <img class="teamLogo" src="williamslogo.png" alt="">
-                                    </div>
-                                    <table>
-                                        <tr>                     
-                                            <th>
-                                                <div class="podium"></div>
-                                                Podium 
-                                                Finishes
-                                            </th>
-                                                <!-- add team podiums -->
-                                            <td>311</td>
-                                            </tr>
-                                            <tr>          
-                                            <th>
-                                                <div class="trophy"></div>
-                                                Championship 
-                                                Titles
-                                            </th>
-                                            <!-- add team titles -->
-                                            <td>9</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="teamsProfile col-7">
-                        <div class="profileContainer" id="Mercedes">
-                            <img src="mercedeslogo.jpg" alt="">
                             <table>
                                 <tr>
-                                    <th>Full Team Name</th>
-                                    <td>Mercedes AMG Petronas Motorsport</td>
+                                    <th>
+                                        <div class="podium"></div>
+                                        Podium
+                                        Finishes
+                                    </th>
+                                    <td>193</td>
                                 </tr>
                                 <tr>
-                                    <th>Base</th>
-                                    <td>Brackley, United Kingdom</td>
-                                </tr>
-                                <tr>
-                                    <th>Team Chief</th>
-                                    <td>Toto Wolff</td>
-                                </tr>
-                                <tr>
-                                    <th>Technical Chief</th>
-                                    <td>James Allison</td>
-                                </tr>
-                                <tr>
-                                    <th>Chassis</th>
-                                    <td>W10</td>
-                                </tr>
-                                <tr>
-                                    <th>First Team Entry</th>
-                                    <td>1970</td>
-                                </tr>
-                                <tr>
-                                    <th>World Championships</th>
+
+                                    <th>
+                                        <div class="trophy"></div>
+                                        Championship
+                                        Titles
+                                    </th>
                                     <td>6</td>
                                 </tr>
-                                <tr>
-                                    <th>Highest Race Finish</th>
-                                    <td>1(x92)</td>
-                                </tr>
-                                <tr>
-                                    <th>Pole Positions</th>
-                                    <td>102</td>
-                                </tr>
-                                <tr>
-                                    <th>Fastest Laps</th>
-                                    <td>65</td>
-                                </tr>
                             </table>
-                            <div class="teamDrivers">
-                                    <div class="f1Driver">
-                                            <div class="driverPic">
-                                                <img src="HAM.jpg" alt="Hamilton">
-                                            </div>
-                                            <div class="driverDetails">
-                                                <p class="driverNum">44</p>
-                                                <p class="driverName">Lewis Hamilton</p>
-                                                <p class="driverTeam">MERCEDES</p>
-                                            </div>
-                                        </div>
-                                        <div class="f1Driver">
-                                            <div class="driverPic">
-                                                <img src="BOT.jpg" alt="Bottas">
-                                            </div>
-                                            <div class="driverDetails">
-                                                <p class="driverNum">77</p>
-                                                <p class="driverName">Valtterri Bottas</p>
-                                                <p class="driverTeam">MERCEDES</p>
-                                            </div>
-                                        </div>
+                        </div>
+                    </div>
+                    <div class="f1Team" onclick="openProfile(event, 'Ferrari')">
+                        <div class="carPic">
+                            <!-- add teams car -->
+                            <img src="Ferrari.jpg" alt="">
+                        </div>
+                        <!--add team color-->
+                        <div class="teamDetails d-flex" style="border-color:#dc0000 ;">
+                            <div class="teamOverview ">
+                                <h2 class="d-flex">
+                                    <!--add teams country flag--><img class="flag" src="ITA.jpg" alt="">
+                                    <!--add team name-->Ferrari</h2>
+                                <ul>
+                                    <!-- add drivers -->
+                                    <li>
+                                        <div class="helmetIcon"></div> Sebastian Vettel
+                                    </li>
+                                    <li>
+                                        <div class="helmetIcon"></div> Charles Leclerc
+                                    </li>
+                                </ul>
+                                <!-- add team logo -->
+                                <img class="teamLogo" src="ferrarilogo.jpg" alt="">
                             </div>
-                        </div>
-                        <div class="profileContainer" id="Ferrari">
-                            <!-- add team logo -->
-                                <img src="ferrarilogo.jpg" alt="">
-                                <table>
-                                    <tr>
-                                        <th>Full Team Name</th>
-                                        <td>Scuderia Ferrari Mission Winnow</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Base</th>
-                                        <td>Maranello, Italy</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Team Chief</th>
-                                        <td>Mattia Binnotto</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Technical Chief</th>
-                                        <td>TBC</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Chassis</th>
-                                        <td>SF90</td>
-                                    </tr>
-                                    <tr>
-                                        <th>First Team Entry</th>
-                                        <td>1950</td>
-                                    </tr>
-                                    <tr>
-                                        <th>World Championships</th>
-                                        <td>16</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Highest Race Finish</th>
-                                        <td>1(x239)</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Pole Positions</th>
-                                        <td>221</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Fastest Laps</th>
-                                        <td>253</td>
-                                    </tr>
-                                </table>
-                                <div class="teamDrivers">
-                                        <div class="f1Driver">
-                                                <div class="driverPic">
-                                                    <img src="VET.jpg" alt="Sebastian Vettel">
-                                                </div>
-                                                <div class="driverDetails">
-                                                    <p class="driverNum">5</p>
-                                                    <p class="driverName">Sebastian Vettel</p>
-                                                    <p  class="driverTeam">FERRARI</p>
-                                                </div>
-                                        </div>
-                                        <div class="f1Driver">
-                                                <div class="driverPic">
-                                                    <img src="LEC.jpg" alt="Charles Leclerc">
-                                                </div>
-                                                <div class="driverDetails">
-                                                    <p class="driverNum">16</p>
-                                                    <p class="driverName">Charles Leclerc</p>
-                                                    <p class="driverTeam">FERRARI</p>
-                                                </div>
-                                        </div>    
-                                </div>
-                        </div>
-                        <div class="profileContainer" id="Redbull">
-                            <!-- add team logo -->
-                            <img src="redbulllogo.jpg" alt="">
                             <table>
                                 <tr>
-                                    <th>Full Team Name</th>
-                                    <td>Aston Martin Red Bull Racing</td>
+                                    <th>
+                                        <div class="podium"></div>
+                                        Podium
+                                        Finishes
+                                    </th>
+                                    <!-- add team podiums -->
+                                    <td>781</td>
                                 </tr>
                                 <tr>
-                                    <th>Base</th>
-                                    <td>Milton Keynes, United Kingdom</td>
+
+                                    <th>
+                                        <div class="trophy"></div>
+                                        Championship
+                                        Titles
+                                    </th>
+                                    <!-- add team titles -->
+                                    <td>16</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="f1Team" onclick="openProfile(event, 'Redbull')">
+                        <div class="carPic">
+                            <!-- add teams car -->
+                            <img src="Redbull.jpg" alt="">
+                        </div>
+                        <!--add team color-->
+                        <div class="teamDetails d-flex" style="border-color: #1E41FF;">
+                            <div class="teamOverview ">
+                                <h2 class="d-flex">
+                                    <!--add teams country flag--><img class="flag" src="AUSTRIA.gif" alt="">
+                                    <!--add team name-->Red Bull Racing</h2>
+                                <ul>
+                                    <!-- add drivers -->
+                                    <li>
+                                        <div class="helmetIcon"></div> Max Verstappen
+                                    </li>
+                                    <li>
+                                        <div class="helmetIcon"></div> Alexander Albon
+                                    </li>
+                                </ul>
+                                <!-- add team logo -->
+                                <img class="teamLogo" src="redbulllogo.jpg" alt="">
+                            </div>
+                            <table>
+                                <tr>
+                                    <th>
+                                        <div class="podium"></div>
+                                        Podium
+                                        Finishes
+                                    </th>
+                                    <!-- add team podiums -->
+                                    <td>169</td>
                                 </tr>
                                 <tr>
-                                    <th>Team Chief</th>
-                                    <td>Christian Horner</td>
-                                </tr>
-                                <tr>
-                                    <th>Technical Chief</th>
-                                    <td>Pierre Wache</td>
-                                    </tr>
-                                <tr>
-                                    <th>Chassis</th>
-                                    <td>RB15</td>
-                                </tr>
-                                <tr>
-                                    <th>Power Unit</th>
-                                    <td>Honda</td>
-                                </tr>
-                                <tr>
-                                    <th>First Team Entry</th>
-                                    <td>1997</td>
-                                </tr>
-                                <tr>
-                                    <th>World Championships</th>
+                                    <th>
+                                        <div class="trophy"></div>
+                                        Championship
+                                        Titles
+                                    </th>
+                                    <!-- add team titles -->
                                     <td>4</td>
                                 </tr>
-                                <tr>
-                                    <th>Highest Race Finish</th>
-                                    <td>1(x62)</td>
-                                </tr>
-                                <tr>
-                                    <th>Pole Positions</th>
-                                    <td>62</td>
-                                </tr>
-                                <tr>
-                                    <th>Fastest Laps</th>
-                                    <td>65</td>
-                                </tr>
                             </table>
-                            <div class="teamDrivers">
-                                    <div class="f1Driver" >
-                                            <div class="driverPic">
-                                                <img src="VER.jpg" alt="Max Verstappen">
-                                            </div>
-                                            <div class="driverDetails">
-                                                <p class="driverNum">33</p>
-                                                <p class="driverName">Max Verstappen</p>
-                                                <p class="driverTeam">RED BULL RACING</p>
-                                            </div>
-                                    </div>
-                                    <div class="f1Driver" >
-                                            <div class="driverPic">
-                                                <img src="ALB.jpg" alt="Alexander Albon">
-                                            </div>
-                                            <div class="driverDetails">
-                                                <p class="driverNum">23</p>
-                                                <p class="driverName">Alexander Albon</p>
-                                                <p class="driverTeam"> RED BULL RACING</p>
-                                            </div>
-                                    </div>
-                            </div>
                         </div>
-                        <div class="profileContainer" id="Mclaren">
-                            <!-- add team logo -->
-                            <img src="mclarenlogo.jpg" alt="">
+                    </div>
+                    <div class="f1Team" onclick="openProfile(event, 'Mclaren')">
+                        <div class="carPic">
+                            <!-- add teams car -->
+                            <img src="Mclaren.jpg" alt="">
+                        </div>
+                        <!--add team color-->
+                        <div class="teamDetails d-flex" style="border-color: #FF8700;">
+                            <div class="teamOverview ">
+                                <h2 class="d-flex">
+                                    <!--add teams country flag--><img class="flag" src="GBR.jpg" alt="">
+                                    <!--add team name-->Mclaren</h2>
+                                <ul>
+                                    <!-- add drivers -->
+                                    <li>
+                                        <div class="helmetIcon"></div> Carlos Sainz
+                                    </li>
+                                    <li>
+                                        <div class="helmetIcon"></div> Lando Norris
+                                    </li>
+                                </ul>
+                                <!-- add team logo -->
+                                <img class="teamLogo" src="mclarenlogo.jpg" alt="">
+                            </div>
                             <table>
                                 <tr>
-                                    <th>Full Team Name</th>
-                                    <td>Mclaren F1 Team</td>
+                                    <th>
+                                        <div class="podium"></div>
+                                        Podium
+                                        Finishes
+                                    </th>
+                                    <!-- add team podiums -->
+                                    <td>486</td>
                                 </tr>
                                 <tr>
-                                    <th>Base</th>
-                                    <td>Woking, United Kingdom</td>
-                                </tr>
-                                <tr>
-                                    <th>Team Chief</th>
-                                    <td>Andreas Seidl</td>
-                                </tr>
-                                <tr>
-                                    <th>Technical Chief</th>
-                                    <td>Jamed Key</td>
-                                    </tr>
-                                <tr>
-                                    <th>Chassis</th>
-                                    <td>MCL34</td>
-                                </tr>
-                                <tr>
-                                    <th>Power Unit</th>
-                                    <td>Renault</td>
-                                </tr>
-                                <tr>
-                                    <th>First Team Entry</th>
-                                    <td>1966</td>
-                                </tr>
-                                <tr>
-                                    <th>World Championships</th>
+                                    <th>
+                                        <div class="trophy"></div>
+                                        Championship
+                                        Titles
+                                    </th>
+                                    <!-- add team titles -->
                                     <td>8</td>
                                 </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="f1Team" onclick="openProfile(event, 'Renault')">
+                        <div class="carPic">
+                            <!-- add teams car -->
+                            <img src="Renault.jpg" alt="">
+                        </div>
+                        <!--add team color-->
+                        <div class="teamDetails d-flex" style="border-color: #FFF500;">
+                            <div class="teamOverview ">
+                                <h2 class="d-flex">
+                                    <!--add teams country flag--><img class="flag" src="FRE.gif" alt="">
+                                    <!--add team name-->Renault</h2>
+                                <ul>
+                                    <!-- add drivers -->
+                                    <li>
+                                        <div class="helmetIcon"></div> Nico Hulkenberg
+                                    </li>
+                                    <li>
+                                        <div class="helmetIcon"></div> Daniel Ricciardo
+                                    </li>
+                                </ul>
+                                <!-- add team logo -->
+                                <img class="teamLogo" src="renaultlogo.jpg" alt="">
+                            </div>
+                            <table>
                                 <tr>
-                                    <th>Highest Race Finish</th>
-                                    <td>1(x182)</td>
+                                    <th>
+                                        <div class="podium"></div>
+                                        Podium
+                                        Finishes
+                                    </th>
+                                    <!-- add team podiums -->
+                                    <td>59</td>
                                 </tr>
                                 <tr>
-                                    <th>Pole Positions</th>
-                                    <td>155</td>
-                                </tr>
-                                <tr>
-                                    <th>Fastest Laps</th>
-                                    <td>155</td>
+                                    <th>
+                                        <div class="trophy"></div>
+                                        Championship
+                                        Titles
+                                    </th>
+                                    <!-- add team titles -->
+                                    <td>2</td>
                                 </tr>
                             </table>
-                            <div class="teamDrivers">
-                                    <div class="f1Driver">
-                                            <div class="driverPic">
-                                                <img src="SAI.jpg" alt="Carlos Sainz">
-                                            </div>
-                                            <div class="driverDetails">
-                                                <p class="driverNum">55</p>
-                                                <p class="driverName">Carlos Sainz</p>
-                                                <p class="driverTeam">MCLAREN</p>
-                                            </div>
-                                    </div>
-                                    <div class="f1Driver" >
-                                            <div class="driverPic">
-                                                <img src="NOR.jpg" alt="Lando Norris">
-                                            </div>
-                                            <div class="driverDetails">
-                                                <p class="driverNum">4</p>
-                                                <p class="driverName">Lando Norris</p>
-                                                <p class="driverTeam">MCLAREN</p>
-                                            </div>
-                                    </div>
+                        </div>
+                    </div>
+                    <div class="f1Team" onclick="openProfile(event, 'ToroRosso')">
+                        <div class="carPic">
+                            <!-- add teams car -->
+                            <img src="Toro Rosso.jpg" alt="">
+                        </div>
+                        <!--add team color-->
+                        <div class="teamDetails d-flex" style="border-color: #469bff;">
+                            <div class="teamOverview ">
+                                <h2 class="d-flex">
+                                    <!--add teams country flag--><img class="flag" src="ITA.jpg" alt="">
+                                    <!--add team name-->Toro Rosso</h2>
+                                <ul>
+                                    <!-- add drivers -->
+                                    <li>
+                                        <div class="helmetIcon"></div> Daniil Kvyat
+                                    </li>
+                                    <li>
+                                        <div class="helmetIcon"></div> Pierre Gasly
+                                    </li>
+                                </ul>
+                                <!-- add team logo -->
+                                <img class="teamLogo" src="tororossologo.jpg" alt="">
+                            </div>
+                            <table>
+                                <tr>
+                                    <th>
+                                        <div class="podium"></div>
+                                        Podium
+                                        Finishes
+                                    </th>
+                                    <!-- add team podiums -->
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="trophy"></div>
+                                        Championship
+                                        Titles
+                                    </th>
+                                    <!-- add team titles -->
+                                    <td>N/A</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="f1Team" onclick="openProfile(event, 'RacingPoint')">
+                        <div class="carPic">
+                            <!-- add teams car -->
+                            <img src="Racing Point.jpg" alt="">
+                        </div>
+                        <!--add team color-->
+                        <div class="teamDetails d-flex" style="border-color: #f596c8;">
+                            <div class="teamOverview ">
+                                <h2 class="d-flex">
+                                    <!--add teams country flag--><img class="flag" src="GBR.jpg" alt="">
+                                    <!--add team name-->Racing Point</h2>
+                                <ul>
+                                    <!-- add drivers -->
+                                    <li>
+                                        <div class="helmetIcon"></div> Sergio Perez
+                                    </li>
+                                    <li>
+                                        <div class="helmetIcon"></div> Lance Stroll
+                                    </li>
+                                </ul>
+                                <!-- add team logo -->
+                                <img class="teamLogo" src="racingpointlogo.jpg" alt="">
+                            </div>
+                            <table>
+                                <tr>
+                                    <th>
+                                        <div class="podium"></div>
+                                        Podium
+                                        Finishes
+                                    </th>
+                                    <!-- add team podiums -->
+                                    <td>N/A</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="trophy"></div>
+                                        Championship
+                                        Titles
+                                    </th>
+                                    <!-- add team titles -->
+                                    <td>N/A</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="f1Team" onclick="openProfile(event, 'AlfaRomeo')">
+                        <div class="carPic">
+                            <!-- add teams car -->
+                            <img src="Alfa Romeo.jpg" alt="">
+                        </div>
+                        <!--add team color-->
+                        <div class="teamDetails d-flex" style="border-color: #9b0000;">
+                            <div class="teamOverview ">
+                                <h2 class="d-flex">
+                                    <!--add teams country flag--><img class="flag" src="SUI.gif" alt="">
+                                    <!--add team name-->Alfa Romeo Racing</h2>
+                                <ul>
+                                    <!-- add drivers -->
+                                    <li>
+                                        <div class="helmetIcon"></div> Kimi Raikkonen
+                                    </li>
+                                    <li>
+                                        <div class="helmetIcon"></div> Antonio Giovinazzi
+                                    </li>
+                                </ul>
+                                <!-- add team logo -->
+                                <img class="teamLogo" src="alfaromeologo.png" alt="">
+                            </div>
+                            <table>
+                                <tr>
+                                    <th>
+                                        <div class="podium"></div>
+                                        Podium
+                                        Finishes
+                                    </th>
+                                    <!-- add team podiums -->
+                                    <td>27</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="trophy"></div>
+                                        Championship
+                                        Titles
+                                    </th>
+                                    <!-- add team titles -->
+                                    <td>N/A</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="f1Team" onclick="openProfile(event, 'Haas')">
+                        <div class="carPic">
+                            <!-- add teams car -->
+                            <img src="Haas.jpg" alt="">
+                        </div>
+                        <!--add team color-->
+                        <div class="teamDetails d-flex" style="border-color: #bd9e57;">
+                            <div class="teamOverview ">
+                                <h2 class="d-flex">
+                                    <!--add teams country flag--><img class="flag" src="USA.jpg" alt="">
+                                    <!--add team name-->Haas F1 Team</h2>
+                                <ul>
+                                    <!-- add drivers -->
+                                    <li>
+                                        <div class="helmetIcon"></div> Romain Grosjean
+                                    </li>
+                                    <li>
+                                        <div class="helmetIcon"></div> Kevin Magnussen
+                                    </li>
+                                </ul>
+                                <!-- add team logo -->
+                                <img class="teamLogo" src="haaslogo.png" alt="">
+                            </div>
+                            <table>
+                                <tr>
+                                    <th>
+                                        <div class="podium"></div>
+                                        Podium
+                                        Finishes
+                                    </th>
+                                    <!-- add team podiums -->
+                                    <td>N/A</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="trophy"></div>
+                                        Championship
+                                        Titles
+                                    </th>
+                                    <!-- add team titles -->
+                                    <td>N/A</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="f1Team" onclick="openProfile(event, 'Williams')">
+                        <div class="carPic">
+                            <!-- add teams car -->
+                            <img src="Williams.jpg" alt="">
+                        </div>
+                        <!--add team color-->
+                        <div class="teamDetails d-flex" style="border-color: #fff;">
+                            <div class="teamOverview ">
+                                <h2 class="d-flex">
+                                    <!--add teams country flag--><img class="flag" src="GBR.jpg" alt="">
+                                    <!--add team name-->Williams</h2>
+                                <ul>
+                                    <!-- add drivers -->
+                                    <li>
+                                        <div class="helmetIcon"></div> Robert Kubica
+                                    </li>
+                                    <li>
+                                        <div class="helmetIcon"></div> George russell
+                                    </li>
+                                </ul>
+                                <!-- add team logo -->
+                                <img class="teamLogo" src="williamslogo.png" alt="">
+                            </div>
+                            <table>
+                                <tr>
+                                    <th>
+                                        <div class="podium"></div>
+                                        Podium
+                                        Finishes
+                                    </th>
+                                    <!-- add team podiums -->
+                                    <td>311</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="trophy"></div>
+                                        Championship
+                                        Titles
+                                    </th>
+                                    <!-- add team titles -->
+                                    <td>9</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="teamsProfile col-7">
+                    <div class="profileContainer" id="Mercedes">
+                        <img src="mercedeslogo.jpg" alt="">
+                        <table>
+                            <tr>
+                                <th>Full Team Name</th>
+                                <td>Mercedes AMG Petronas Motorsport</td>
+                            </tr>
+                            <tr>
+                                <th>Base</th>
+                                <td>Brackley, United Kingdom</td>
+                            </tr>
+                            <tr>
+                                <th>Team Chief</th>
+                                <td>Toto Wolff</td>
+                            </tr>
+                            <tr>
+                                <th>Technical Chief</th>
+                                <td>James Allison</td>
+                            </tr>
+                            <tr>
+                                <th>Chassis</th>
+                                <td>W10</td>
+                            </tr>
+                            <tr>
+                                <th>First Team Entry</th>
+                                <td>1970</td>
+                            </tr>
+                            <tr>
+                                <th>World Championships</th>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <th>Highest Race Finish</th>
+                                <td>1(x92)</td>
+                            </tr>
+                            <tr>
+                                <th>Pole Positions</th>
+                                <td>102</td>
+                            </tr>
+                            <tr>
+                                <th>Fastest Laps</th>
+                                <td>65</td>
+                            </tr>
+                        </table>
+                        <div class="teamDrivers">
+                            <div class="f1Driver">
+                                <div class="driverPic">
+                                    <img src="HAM.jpg" alt="Hamilton">
+                                </div>
+                                <div class="driverDetails">
+                                    <p class="driverNum">44</p>
+                                    <p class="driverName">Lewis Hamilton</p>
+                                    <p class="driverTeam">MERCEDES</p>
+                                </div>
+                            </div>
+                            <div class="f1Driver">
+                                <div class="driverPic">
+                                    <img src="BOT.jpg" alt="Bottas">
+                                </div>
+                                <div class="driverDetails">
+                                    <p class="driverNum">77</p>
+                                    <p class="driverName">Valtterri Bottas</p>
+                                    <p class="driverTeam">MERCEDES</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="profileContainer" id="Renault">
-                                <!-- add team logo -->
-                                <img src="renaultlogo.jpg" alt="">
-                                <table>
-                                    <tr>
-                                        <th>Full Team Name</th>
-                                        <td>Renault F1 Team</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Base</th>
-                                        <td>Enstone, United Kingdom</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Team Chief</th>
-                                        <td>Cryil Abiteboul</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Technical Chief</th>
-                                        <td>NIck Chester</td>
-                                        </tr>
-                                    <tr>
-                                        <th>Chassis</th>
-                                        <td>R.S.19</td>
-                                    </tr>
-                                    <tr>
-                                        <th>First Team Entry</th>
-                                        <td>1986</td>
-                                    </tr>
-                                    <tr>
-                                        <th>World Championships</th>
-                                        <td>2</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Highest Race Finish</th>
-                                        <td>1(x20)</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Pole Positions</th>
-                                        <td>20</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Fastest Laps</th>
-                                        <td>13</td>
-                                    </tr>
-                                </table>
-                                <div class="teamDrivers">
-                                        <div class="f1Driver">
-                                                <div class="driverPic">
-                                                    <img src="HUL.jpg" alt="Nico Hulkenberg">
-                                                </div>
-                                                <div class="driverDetails">
-                                                    <p class="driverNum">27</p>
-                                                    <p class="driverName">Nico Hulkenberg</p>
-                                                    <p class="driverTeam">RENAULT</p>
-                                                </div>
-                                        </div>  
-                                        <div class="f1Driver">
-                                                <div class="driverPic">
-                                                    <img src="RIC.jpg" alt="Daniel Ricciardo">
-                                                </div>
-                                                <div class="driverDetails">
-                                                    <p class="driverNum">3</p>
-                                                    <p class="driverName">Daniel Ricciardo</p>
-                                                    <p class="driverTeam">RENAULT</p>
-                                                </div>
-                                        </div> 
+                    </div>
+                    <div class="profileContainer" id="Ferrari">
+                        <!-- add team logo -->
+                        <img src="ferrarilogo.jpg" alt="">
+                        <table>
+                            <tr>
+                                <th>Full Team Name</th>
+                                <td>Scuderia Ferrari Mission Winnow</td>
+                            </tr>
+                            <tr>
+                                <th>Base</th>
+                                <td>Maranello, Italy</td>
+                            </tr>
+                            <tr>
+                                <th>Team Chief</th>
+                                <td>Mattia Binnotto</td>
+                            </tr>
+                            <tr>
+                                <th>Technical Chief</th>
+                                <td>TBC</td>
+                            </tr>
+                            <tr>
+                                <th>Chassis</th>
+                                <td>SF90</td>
+                            </tr>
+                            <tr>
+                                <th>First Team Entry</th>
+                                <td>1950</td>
+                            </tr>
+                            <tr>
+                                <th>World Championships</th>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <th>Highest Race Finish</th>
+                                <td>1(x239)</td>
+                            </tr>
+                            <tr>
+                                <th>Pole Positions</th>
+                                <td>221</td>
+                            </tr>
+                            <tr>
+                                <th>Fastest Laps</th>
+                                <td>253</td>
+                            </tr>
+                        </table>
+                        <div class="teamDrivers">
+                            <div class="f1Driver">
+                                <div class="driverPic">
+                                    <img src="VET.jpg" alt="Sebastian Vettel">
                                 </div>
-                        </div>
-                        <div class="profileContainer" id="ToroRosso">
-                                <!-- add team logo -->
-                                <img src="tororossologo.jpg" alt="">
-                                <table>
-                                    <tr>
-                                        <th>Full Team Name</th>
-                                        <td>Scuderia Toro Rosso Honda</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Base</th>
-                                        <td>Faenza, Italy</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Team Chief</th>
-                                        <td>Franz Tost</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Technical Chief</th>
-                                        <td>Jody Egginton</td>
-                                        </tr>
-                                    <tr>
-                                        <th>Chassis</th>
-                                        <td>STR14</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Power Unit</th>
-                                        <td>Honda</td>
-                                    </tr>
-                                    <tr>
-                                        <th>First Team Entry</th>
-                                        <td>1985</td>
-                                    </tr>
-                                    <tr>
-                                        <th>World Championships</th>
-                                        <td>N/A</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Highest Race Finish</th>
-                                        <td>1(x1)</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Pole Positions</th>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Fastest Laps</th>
-                                        <td>1</td>
-                                    </tr>
-                                </table>
-                                <div class="teamDrivers">
-                                        <div class="f1Driver">
-                                                <div class="driverPic">
-                                                    <img src="KYV.jpg" alt="Daniil Kyvat">
-                                                </div>
-                                                <div class="driverDetails">
-                                                    <p class="driverNum">26</p>
-                                                    <p class="driverName">Daniil Kyvat</p>
-                                                    <p class="driverTeam">TORO ROSSO</p>
-                                                </div>
-                                        </div>   
-                                        <div class="f1Driver">
-                                                <div class="driverPic">
-                                                    <img src="GAS.jpg" alt="Pierre Gasly">
-                                                </div>
-                                                <div class="driverDetails">
-                                                    <p class="driverNum">10</p>
-                                                    <p class="driverName">Pierre Gasly</p>
-                                                    <p class="driverTeam">TORO ROSSO</p>
-                                                </div>
-                                        </div> 
+                                <div class="driverDetails">
+                                    <p class="driverNum">5</p>
+                                    <p class="driverName">Sebastian Vettel</p>
+                                    <p class="driverTeam">FERRARI</p>
                                 </div>
-                        </div>
-                        <div class="profileContainer" id="RacingPoint">
-                                <!-- add team logo -->
-                                <img src="racingpointlogo.jpg" alt="">
-                                <table>
-                                    <tr>
-                                        <th>Full Team Name</th>
-                                        <td>SportPesa Racing Point F1 Team</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Base</th>
-                                        <td>Silverstone, United Kingdom</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Team Chief</th>
-                                        <td>Otmar Szafnauer</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Technical Chief</th>
-                                        <td>Andrew Green</td>
-                                        </tr>
-                                    <tr>
-                                        <th>Chassis</th>
-                                        <td>RP19</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Power Unit</th>
-                                        <td>BWT Mercedes</td>
-                                    </tr>
-                                    <tr>
-                                        <th>First Team Entry</th>
-                                        <td>N/A</td>
-                                    </tr>
-                                    <tr>
-                                        <th>World Championships</th>
-                                        <td>N/A</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Highest Race Finish</th>
-                                        <td>2(X1)</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Pole Positions</th>
-                                        <td>N/A</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Fastest Laps</th>
-                                        <td></td>
-                                    </tr>
-                                </table>
-                                <div class="teamDrivers">
-                                        <div class="f1Driver">
-                                                <div class="driverPic">
-                                                    <img src="PER.jpg" alt="Sergio Perez">
-                                                </div>
-                                                <div class="driverDetails">
-                                                    <p class="driverNum">11</p>
-                                                    <p class="driverName">Sergio Perez</p>
-                                                    <p class="driverTeam">RACING POINT</p>
-                                                </div>
-                                        </div>   
-                                        <div class="f1Driver">
-                                                <div class="driverPic">
-                                                    <img src="STR.jpg" alt="Lance Stroll">
-                                                </div>
-                                                <div class="driverDetails">
-                                                    <p class="driverNum">18</p>
-                                                    <p class="driverName">Lance Stroll</p>
-                                                    <p class="driverTeam">RACING POINT</p>
-                                                </div>
-                                        </div>  
+                            </div>
+                            <div class="f1Driver">
+                                <div class="driverPic">
+                                    <img src="LEC.jpg" alt="Charles Leclerc">
                                 </div>
-                        </div>
-                        <div class="profileContainer" id="AlfaRomeo">
-                                <!-- add team logo -->
-                                <img src="alfaromeologo.png" alt="">
-                                <table>
-                                    <tr>
-                                        <th>Full Team Name</th>
-                                        <td>Alfa Romeo Racing</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Base</th>
-                                        <td>Hinwil, Switzerland</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Team Chief</th>
-                                        <td>Fredric Vasseur</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Technical Chief</th>
-                                        <td>Jan Monchaux</td>
-                                        </tr>
-                                    <tr>
-                                        <th>Chassis</th>
-                                        <td>C38</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Power Unit</th>
-                                        <td>Ferrari</td>
-                                    </tr>
-                                    <tr>
-                                        <th>First Team Entry</th>
-                                        <td>1993</td>
-                                    </tr>
-                                    <tr>
-                                        <th>World Championships</th>
-                                        <td>N/A</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Highest Race Finish</th>
-                                        <td>1(x1)</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Pole Positions</th>
-                                        <td>1</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Fastest Laps</th>
-                                        <td>5</td>
-                                    </tr>
-                                </table>
-                                <div class="teamDrivers">
-                                        <div class="f1Driver">
-                                                <div class="driverPic">
-                                                    <img src="RAI.jpg" alt="Kimi Raikkonen">
-                                                </div>
-                                                <div class="driverDetails">
-                                                    <p class="driverNum">7</p>
-                                                    <p class="driverName">Kimi Raikkonen</p>
-                                                    <p class="driverTeam">ALFA ROMEO</p>
-                                                </div>
-                                        </div>  
-                                        <div class="f1Driver">
-                                                <div class="driverPic">
-                                                    <img src="GIO.jpg" alt="Antonio Giovinazzi">
-                                                </div>
-                                                <div class="driverDetails">
-                                                    <p class="driverNum">99</p>
-                                                    <p class="driverName">Antonio Giovinazzi</p>
-                                                    <p class="driverTeam">ALFA ROMEO</p>
-                                                </div>
-                                            </div>
+                                <div class="driverDetails">
+                                    <p class="driverNum">16</p>
+                                    <p class="driverName">Charles Leclerc</p>
+                                    <p class="driverTeam">FERRARI</p>
                                 </div>
+                            </div>
                         </div>
-                        <div class="profileContainer" id="Haas">
-                                <!-- add team logo -->
-                                <img src="haaslogo.png" alt="">
-                                <table>
-                                    <tr>
-                                        <th>Full Team Name</th>
-                                        <td>Haas F1 Team</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Base</th>
-                                        <td>Kannapolis, United States</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Team Chief</th>
-                                        <td>Guenther Steiner</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Technical Chief</th>
-                                        <td>Rob Taylor</td>
-                                        </tr>
-                                    <tr>
-                                        <th>Chassis</th>
-                                        <td>VF-19</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Power Unit</th>
-                                        <td>Ferrari</td>
-                                    </tr>
-                                    <tr>
-                                        <th>First Team Entry</th>
-                                        <td>2016</td>
-                                    </tr>
-                                    <tr>
-                                        <th>World Championships</th>
-                                        <td>N/A</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Highest Race Finish</th>
-                                        <td>4(X1)</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Pole Positions</th>
-                                        <td>N/A</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Fastest Laps</th>
-                                        <td>2</td>
-                                    </tr>
-                                </table>
-                                <div class="teamDrivers">
-                                        <div class="f1Driver">
-                                                <div class="driverPic">
-                                                    <img src="GRO.jpg" alt="Romain Grosjean">
-                                                </div>
-                                                <div class="driverDetails">
-                                                    <p class="driverNum">8</p>
-                                                    <p class="driverName">Romain Grosjean</p>
-                                                    <p class="driverTeam">HAAS</p>
-                                                </div>
-                                        </div>
-                                        <div class="f1Driver">
-                                                <div class="driverPic">
-                                                    <img src="MAG.jpg" alt="Kevin Magnussen">
-                                                </div>
-                                                <div class="driverDetails">
-                                                    <p class="driverNum">20</p>
-                                                    <p class="driverName">Kevin Magnussen</p>
-                                                    <p class="driverTeam">HAAS</p>
-                                                </div>
-                                        </div>
+                    </div>
+                    <div class="profileContainer" id="Redbull">
+                        <!-- add team logo -->
+                        <img src="redbulllogo.jpg" alt="">
+                        <table>
+                            <tr>
+                                <th>Full Team Name</th>
+                                <td>Aston Martin Red Bull Racing</td>
+                            </tr>
+                            <tr>
+                                <th>Base</th>
+                                <td>Milton Keynes, United Kingdom</td>
+                            </tr>
+                            <tr>
+                                <th>Team Chief</th>
+                                <td>Christian Horner</td>
+                            </tr>
+                            <tr>
+                                <th>Technical Chief</th>
+                                <td>Pierre Wache</td>
+                            </tr>
+                            <tr>
+                                <th>Chassis</th>
+                                <td>RB15</td>
+                            </tr>
+                            <tr>
+                                <th>Power Unit</th>
+                                <td>Honda</td>
+                            </tr>
+                            <tr>
+                                <th>First Team Entry</th>
+                                <td>1997</td>
+                            </tr>
+                            <tr>
+                                <th>World Championships</th>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <th>Highest Race Finish</th>
+                                <td>1(x62)</td>
+                            </tr>
+                            <tr>
+                                <th>Pole Positions</th>
+                                <td>62</td>
+                            </tr>
+                            <tr>
+                                <th>Fastest Laps</th>
+                                <td>65</td>
+                            </tr>
+                        </table>
+                        <div class="teamDrivers">
+                            <div class="f1Driver">
+                                <div class="driverPic">
+                                    <img src="VER.jpg" alt="Max Verstappen">
+                                </div>
+                                <div class="driverDetails">
+                                    <p class="driverNum">33</p>
+                                    <p class="driverName">Max Verstappen</p>
+                                    <p class="driverTeam">RED BULL RACING</p>
+                                </div>
+                            </div>
+                            <div class="f1Driver">
+                                <div class="driverPic">
+                                    <img src="ALB.jpg" alt="Alexander Albon">
+                                </div>
+                                <div class="driverDetails">
+                                    <p class="driverNum">23</p>
+                                    <p class="driverName">Alexander Albon</p>
+                                    <p class="driverTeam"> RED BULL RACING</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profileContainer" id="Mclaren">
+                        <!-- add team logo -->
+                        <img src="mclarenlogo.jpg" alt="">
+                        <table>
+                            <tr>
+                                <th>Full Team Name</th>
+                                <td>Mclaren F1 Team</td>
+                            </tr>
+                            <tr>
+                                <th>Base</th>
+                                <td>Woking, United Kingdom</td>
+                            </tr>
+                            <tr>
+                                <th>Team Chief</th>
+                                <td>Andreas Seidl</td>
+                            </tr>
+                            <tr>
+                                <th>Technical Chief</th>
+                                <td>Jamed Key</td>
+                            </tr>
+                            <tr>
+                                <th>Chassis</th>
+                                <td>MCL34</td>
+                            </tr>
+                            <tr>
+                                <th>Power Unit</th>
+                                <td>Renault</td>
+                            </tr>
+                            <tr>
+                                <th>First Team Entry</th>
+                                <td>1966</td>
+                            </tr>
+                            <tr>
+                                <th>World Championships</th>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <th>Highest Race Finish</th>
+                                <td>1(x182)</td>
+                            </tr>
+                            <tr>
+                                <th>Pole Positions</th>
+                                <td>155</td>
+                            </tr>
+                            <tr>
+                                <th>Fastest Laps</th>
+                                <td>155</td>
+                            </tr>
+                        </table>
+                        <div class="teamDrivers">
+                            <div class="f1Driver">
+                                <div class="driverPic">
+                                    <img src="SAI.jpg" alt="Carlos Sainz">
+                                </div>
+                                <div class="driverDetails">
+                                    <p class="driverNum">55</p>
+                                    <p class="driverName">Carlos Sainz</p>
+                                    <p class="driverTeam">MCLAREN</p>
+                                </div>
+                            </div>
+                            <div class="f1Driver">
+                                <div class="driverPic">
+                                    <img src="NOR.jpg" alt="Lando Norris">
+                                </div>
+                                <div class="driverDetails">
+                                    <p class="driverNum">4</p>
+                                    <p class="driverName">Lando Norris</p>
+                                    <p class="driverTeam">MCLAREN</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profileContainer" id="Renault">
+                        <!-- add team logo -->
+                        <img src="renaultlogo.jpg" alt="">
+                        <table>
+                            <tr>
+                                <th>Full Team Name</th>
+                                <td>Renault F1 Team</td>
+                            </tr>
+                            <tr>
+                                <th>Base</th>
+                                <td>Enstone, United Kingdom</td>
+                            </tr>
+                            <tr>
+                                <th>Team Chief</th>
+                                <td>Cryil Abiteboul</td>
+                            </tr>
+                            <tr>
+                                <th>Technical Chief</th>
+                                <td>NIck Chester</td>
+                            </tr>
+                            <tr>
+                                <th>Chassis</th>
+                                <td>R.S.19</td>
+                            </tr>
+                            <tr>
+                                <th>First Team Entry</th>
+                                <td>1986</td>
+                            </tr>
+                            <tr>
+                                <th>World Championships</th>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <th>Highest Race Finish</th>
+                                <td>1(x20)</td>
+                            </tr>
+                            <tr>
+                                <th>Pole Positions</th>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <th>Fastest Laps</th>
+                                <td>13</td>
+                            </tr>
+                        </table>
+                        <div class="teamDrivers">
+                            <div class="f1Driver">
+                                <div class="driverPic">
+                                    <img src="HUL.jpg" alt="Nico Hulkenberg">
+                                </div>
+                                <div class="driverDetails">
+                                    <p class="driverNum">27</p>
+                                    <p class="driverName">Nico Hulkenberg</p>
+                                    <p class="driverTeam">RENAULT</p>
+                                </div>
+                            </div>
+                            <div class="f1Driver">
+                                <div class="driverPic">
+                                    <img src="RIC.jpg" alt="Daniel Ricciardo">
+                                </div>
+                                <div class="driverDetails">
+                                    <p class="driverNum">3</p>
+                                    <p class="driverName">Daniel Ricciardo</p>
+                                    <p class="driverTeam">RENAULT</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profileContainer" id="ToroRosso">
+                        <!-- add team logo -->
+                        <img src="tororossologo.jpg" alt="">
+                        <table>
+                            <tr>
+                                <th>Full Team Name</th>
+                                <td>Scuderia Toro Rosso Honda</td>
+                            </tr>
+                            <tr>
+                                <th>Base</th>
+                                <td>Faenza, Italy</td>
+                            </tr>
+                            <tr>
+                                <th>Team Chief</th>
+                                <td>Franz Tost</td>
+                            </tr>
+                            <tr>
+                                <th>Technical Chief</th>
+                                <td>Jody Egginton</td>
+                            </tr>
+                            <tr>
+                                <th>Chassis</th>
+                                <td>STR14</td>
+                            </tr>
+                            <tr>
+                                <th>Power Unit</th>
+                                <td>Honda</td>
+                            </tr>
+                            <tr>
+                                <th>First Team Entry</th>
+                                <td>1985</td>
+                            </tr>
+                            <tr>
+                                <th>World Championships</th>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <th>Highest Race Finish</th>
+                                <td>1(x1)</td>
+                            </tr>
+                            <tr>
+                                <th>Pole Positions</th>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th>Fastest Laps</th>
+                                <td>1</td>
+                            </tr>
+                        </table>
+                        <div class="teamDrivers">
+                            <div class="f1Driver">
+                                <div class="driverPic">
+                                    <img src="KYV.jpg" alt="Daniil Kyvat">
+                                </div>
+                                <div class="driverDetails">
+                                    <p class="driverNum">26</p>
+                                    <p class="driverName">Daniil Kyvat</p>
+                                    <p class="driverTeam">TORO ROSSO</p>
+                                </div>
+                            </div>
+                            <div class="f1Driver">
+                                <div class="driverPic">
+                                    <img src="GAS.jpg" alt="Pierre Gasly">
+                                </div>
+                                <div class="driverDetails">
+                                    <p class="driverNum">10</p>
+                                    <p class="driverName">Pierre Gasly</p>
+                                    <p class="driverTeam">TORO ROSSO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profileContainer" id="RacingPoint">
+                        <!-- add team logo -->
+                        <img src="racingpointlogo.jpg" alt="">
+                        <table>
+                            <tr>
+                                <th>Full Team Name</th>
+                                <td>SportPesa Racing Point F1 Team</td>
+                            </tr>
+                            <tr>
+                                <th>Base</th>
+                                <td>Silverstone, United Kingdom</td>
+                            </tr>
+                            <tr>
+                                <th>Team Chief</th>
+                                <td>Otmar Szafnauer</td>
+                            </tr>
+                            <tr>
+                                <th>Technical Chief</th>
+                                <td>Andrew Green</td>
+                            </tr>
+                            <tr>
+                                <th>Chassis</th>
+                                <td>RP19</td>
+                            </tr>
+                            <tr>
+                                <th>Power Unit</th>
+                                <td>BWT Mercedes</td>
+                            </tr>
+                            <tr>
+                                <th>First Team Entry</th>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <th>World Championships</th>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <th>Highest Race Finish</th>
+                                <td>2(X1)</td>
+                            </tr>
+                            <tr>
+                                <th>Pole Positions</th>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <th>Fastest Laps</th>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <div class="teamDrivers">
+                            <div class="f1Driver">
+                                <div class="driverPic">
+                                    <img src="PER.jpg" alt="Sergio Perez">
+                                </div>
+                                <div class="driverDetails">
+                                    <p class="driverNum">11</p>
+                                    <p class="driverName">Sergio Perez</p>
+                                    <p class="driverTeam">RACING POINT</p>
+                                </div>
+                            </div>
+                            <div class="f1Driver">
+                                <div class="driverPic">
+                                    <img src="STR.jpg" alt="Lance Stroll">
+                                </div>
+                                <div class="driverDetails">
+                                    <p class="driverNum">18</p>
+                                    <p class="driverName">Lance Stroll</p>
+                                    <p class="driverTeam">RACING POINT</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profileContainer" id="AlfaRomeo">
+                        <!-- add team logo -->
+                        <img src="alfaromeologo.png" alt="">
+                        <table>
+                            <tr>
+                                <th>Full Team Name</th>
+                                <td>Alfa Romeo Racing</td>
+                            </tr>
+                            <tr>
+                                <th>Base</th>
+                                <td>Hinwil, Switzerland</td>
+                            </tr>
+                            <tr>
+                                <th>Team Chief</th>
+                                <td>Fredric Vasseur</td>
+                            </tr>
+                            <tr>
+                                <th>Technical Chief</th>
+                                <td>Jan Monchaux</td>
+                            </tr>
+                            <tr>
+                                <th>Chassis</th>
+                                <td>C38</td>
+                            </tr>
+                            <tr>
+                                <th>Power Unit</th>
+                                <td>Ferrari</td>
+                            </tr>
+                            <tr>
+                                <th>First Team Entry</th>
+                                <td>1993</td>
+                            </tr>
+                            <tr>
+                                <th>World Championships</th>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <th>Highest Race Finish</th>
+                                <td>1(x1)</td>
+                            </tr>
+                            <tr>
+                                <th>Pole Positions</th>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th>Fastest Laps</th>
+                                <td>5</td>
+                            </tr>
+                        </table>
+                        <div class="teamDrivers">
+                            <div class="f1Driver">
+                                <div class="driverPic">
+                                    <img src="RAI.jpg" alt="Kimi Raikkonen">
+                                </div>
+                                <div class="driverDetails">
+                                    <p class="driverNum">7</p>
+                                    <p class="driverName">Kimi Raikkonen</p>
+                                    <p class="driverTeam">ALFA ROMEO</p>
+                                </div>
+                            </div>
+                            <div class="f1Driver">
+                                <div class="driverPic">
+                                    <img src="GIO.jpg" alt="Antonio Giovinazzi">
+                                </div>
+                                <div class="driverDetails">
+                                    <p class="driverNum">99</p>
+                                    <p class="driverName">Antonio Giovinazzi</p>
+                                    <p class="driverTeam">ALFA ROMEO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profileContainer" id="Haas">
+                        <!-- add team logo -->
+                        <img src="haaslogo.png" alt="">
+                        <table>
+                            <tr>
+                                <th>Full Team Name</th>
+                                <td>Haas F1 Team</td>
+                            </tr>
+                            <tr>
+                                <th>Base</th>
+                                <td>Kannapolis, United States</td>
+                            </tr>
+                            <tr>
+                                <th>Team Chief</th>
+                                <td>Guenther Steiner</td>
+                            </tr>
+                            <tr>
+                                <th>Technical Chief</th>
+                                <td>Rob Taylor</td>
+                            </tr>
+                            <tr>
+                                <th>Chassis</th>
+                                <td>VF-19</td>
+                            </tr>
+                            <tr>
+                                <th>Power Unit</th>
+                                <td>Ferrari</td>
+                            </tr>
+                            <tr>
+                                <th>First Team Entry</th>
+                                <td>2016</td>
+                            </tr>
+                            <tr>
+                                <th>World Championships</th>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <th>Highest Race Finish</th>
+                                <td>4(X1)</td>
+                            </tr>
+                            <tr>
+                                <th>Pole Positions</th>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <th>Fastest Laps</th>
+                                <td>2</td>
+                            </tr>
+                        </table>
+                        <div class="teamDrivers">
+                            <div class="f1Driver">
+                                <div class="driverPic">
+                                    <img src="GRO.jpg" alt="Romain Grosjean">
+                                </div>
+                                <div class="driverDetails">
+                                    <p class="driverNum">8</p>
+                                    <p class="driverName">Romain Grosjean</p>
+                                    <p class="driverTeam">HAAS</p>
+                                </div>
+                            </div>
+                            <div class="f1Driver">
+                                <div class="driverPic">
+                                    <img src="MAG.jpg" alt="Kevin Magnussen">
+                                </div>
+                                <div class="driverDetails">
+                                    <p class="driverNum">20</p>
+                                    <p class="driverName">Kevin Magnussen</p>
+                                    <p class="driverTeam">HAAS</p>
+                                </div>
+                            </div>
 
-                                </div>
                         </div>
-                        <div class="profileContainer" id="Williams">
-                                <!-- add team logo -->
-                                <img src="" alt="">
-                                <table>
-                                    <tr>
-                                        <th>Full Team Name</th>
-                                        <td>ROkiT Williams Racing</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Base</th>
-                                        <td>Grove, United Kingdom</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Team Chief</th>
-                                        <td>Frank Williams</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Technical Chief</th>
-                                        <td>TBC</td>
-                                        </tr>
-                                    <tr>
-                                        <th>Chassis</th>
-                                        <td>FW42</td>
-                                    </tr>
-                                    <tr>
-                                        <th>First Team Entry</th>
-                                        <td>1978</td>
-                                    </tr>
-                                    <tr>
-                                        <th>World Championships</th>
-                                        <td>9</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Highest Race Finish</th>
-                                        <td>1(x114)</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Pole Positions</th>
-                                        <td>129</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Fastest Laps</th>
-                                        <td>133</td>
-                                    </tr>
-                                </table>
-                                <div class="teamDrivers">
-                                        <div class="f1Driver" >
-                                                <div class="driverPic">
-                                                    <img src="KUB.jpg" alt="Robert Kubica">
-                                                </div>
-                                                <div class="driverDetails">
-                                                    <p class="driverNum">88</p>
-                                                    <p class="driverName">Robert Kubica</p>
-                                                    <p class="driverTeam">Williams</p>
-                                                </div>
-                                            </div>
-                                            <div class="f1Driver">
-                                                <div class="driverPic">
-                                                    <img src="RUS.jpg" alt="George Russell">
-                                                </div>
-                                                <div class="driverDetails">
-                                                    <p class="driverNum">63</p>
-                                                    <p class="driverName">George Russell</p>
-                                                    <p class="driverTeam">Williams</p>
-                                                </div>
-                                            </div>   
+                    </div>
+                    <div class="profileContainer" id="Williams">
+                        <!-- add team logo -->
+                        <img src="" alt="">
+                        <table>
+                            <tr>
+                                <th>Full Team Name</th>
+                                <td>ROkiT Williams Racing</td>
+                            </tr>
+                            <tr>
+                                <th>Base</th>
+                                <td>Grove, United Kingdom</td>
+                            </tr>
+                            <tr>
+                                <th>Team Chief</th>
+                                <td>Frank Williams</td>
+                            </tr>
+                            <tr>
+                                <th>Technical Chief</th>
+                                <td>TBC</td>
+                            </tr>
+                            <tr>
+                                <th>Chassis</th>
+                                <td>FW42</td>
+                            </tr>
+                            <tr>
+                                <th>First Team Entry</th>
+                                <td>1978</td>
+                            </tr>
+                            <tr>
+                                <th>World Championships</th>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <th>Highest Race Finish</th>
+                                <td>1(x114)</td>
+                            </tr>
+                            <tr>
+                                <th>Pole Positions</th>
+                                <td>129</td>
+                            </tr>
+                            <tr>
+                                <th>Fastest Laps</th>
+                                <td>133</td>
+                            </tr>
+                        </table>
+                        <div class="teamDrivers">
+                            <div class="f1Driver">
+                                <div class="driverPic">
+                                    <img src="KUB.jpg" alt="Robert Kubica">
                                 </div>
+                                <div class="driverDetails">
+                                    <p class="driverNum">88</p>
+                                    <p class="driverName">Robert Kubica</p>
+                                    <p class="driverTeam">Williams</p>
+                                </div>
+                            </div>
+                            <div class="f1Driver">
+                                <div class="driverPic">
+                                    <img src="RUS.jpg" alt="George Russell">
+                                </div>
+                                <div class="driverDetails">
+                                    <p class="driverNum">63</p>
+                                    <p class="driverName">George Russell</p>
+                                    <p class="driverTeam">Williams</p>
+                                </div>
+                            </div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
-            <footer class="f1-footer">
-                    <div class="f1-footer-top d-flex">
-                        <p class="label storeLabel ">DOWNLOAD THE OFFICIAL F1 APP</p>
-                        <ul class="d-flex">
-                            <li class="storeLink">
-                                <a  href="https://play.google.com/store/apps/details?id=com.softpauer.f1timingapp2014.basic&hl=en_GB">
-                                <img src="https://www.formula1.com/etc/designs/fom-website/images/svg/google-play-badge.svg">
-                                </a>
-                            </li>
-                            <li class="storeLink">
-                                <a href="https://www.formula1.com/etc/designs/fom-website/images/svg/google-play-badge.svg">
-                                <img src="https://www.formula1.com/etc/designs/fom-website/images/svg/download-on-the-app-store-apple.svg" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="social col-md-5 ml-auto">
-                           <!-- <ul class=" d-table float-md-right d-flex">-->
-                                
-                                    <a href="https://www.facebook.com/Formula1">
-                                        <i class="icon fab fa-facebook-square fa-2x"></i>
-                                    </a>
-                                
-                                
-                                    <a href="https://twitter.com/f1">
-                                        <i class="icon fab fa-twitter-square fa-2x"></i>
-                                    </a>
-                                
-                                
-                                    <a href="https://www.instagram.com/f1/">
-                                        <i class="icon fab fa-instagram fa-2x"></i>
-                                    </a>
-                                
-                                
-                                    <a href="https://www.youtube.com/F1">
-                                        <i class="icon fab fa-youtube-square fa-2x"></i>
-                                    </a>
-                                
-                            <!--</ul>-->
-                        </div>
-                    </div>
-                    <div class="f1-footer-middle ">
-                        <div class="navbottom  navlist d-flex offset-md-3">
-                            
-                                        <a class="bottomNavLink" href="#">Latest</a>
-                                        <a class="bottomNavLink" href="standings.html">Standings</a>
-                                        <a class="bottomNavLink" href="drivers.html">Drivers</a>
-                                        <a class="bottomNavLink active" href="Teams.html">Teams</a>
-                                        <a class="bottomNavLink" href="Races.html">Races</a>
-                        
-                        </div>
-                    </div>
-                    <div class="f1-footer-bottom">
-                        <ul class="bottomlist d-flex offset-md-2">
-                            <li>CONTACT</li>
-                            <li>FAQ</li>
-                            <li>PRIVACY POLICY</li>
-                            <li>GUIDLINES</li>
-                            <li>TERMS OF USE</li>
-                            <li>PARTNERS</li>
-                            <li>BEYOND THE GRID</li>
-                            <li>INNOVATION </li>
-                        </ul>
-                    </div>
-                </footer>
+        </div>
+        <footer class="f1-footer">
+            <div class="f1-footer-top d-flex">
+                <p class="label storeLabel ">DOWNLOAD THE OFFICIAL F1 APP</p>
+                <ul class="d-flex">
+                    <li class="storeLink">
+                        <a
+                            href="https://play.google.com/store/apps/details?id=com.softpauer.f1timingapp2014.basic&hl=en_GB">
+                            <img
+                                src="https://www.formula1.com/etc/designs/fom-website/images/svg/google-play-badge.svg">
+                        </a>
+                    </li>
+                    <li class="storeLink">
+                        <a href="https://www.formula1.com/etc/designs/fom-website/images/svg/google-play-badge.svg">
+                            <img src="https://www.formula1.com/etc/designs/fom-website/images/svg/download-on-the-app-store-apple.svg"
+                                alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div class="social col-md-5 ml-auto">
+                    <!-- <ul class=" d-table float-md-right d-flex">-->
+
+                    <a href="https://www.facebook.com/Formula1">
+                        <i class="icon fab fa-facebook-square fa-2x"></i>
+                    </a>
+
+
+                    <a href="https://twitter.com/f1">
+                        <i class="icon fab fa-twitter-square fa-2x"></i>
+                    </a>
+
+
+                    <a href="https://www.instagram.com/f1/">
+                        <i class="icon fab fa-instagram fa-2x"></i>
+                    </a>
+
+
+                    <a href="https://www.youtube.com/F1">
+                        <i class="icon fab fa-youtube-square fa-2x"></i>
+                    </a>
+
+                    <!--</ul>-->
+                </div>
+            </div>
+            <div class="f1-footer-middle ">
+                <div class="navbottom  navlist d-flex offset-md-3">
+
+                    <a class="bottomNavLink" href="index.html">Latest</a>
+                    <a class="bottomNavLink" href="standings.html">Standings</a>
+                    <a class="bottomNavLink" href="drivers.html">Drivers</a>
+                    <a class="bottomNavLink active" href="Teams.html">Teams</a>
+                    <a class="bottomNavLink" href="Races.html">Races</a>
+
+                </div>
+            </div>
+            <div class="f1-footer-bottom">
+                <ul class="bottomlist d-flex offset-md-2">
+                    <li>CONTACT</li>
+                    <li>FAQ</li>
+                    <li>PRIVACY POLICY</li>
+                    <li>GUIDLINES</li>
+                    <li>TERMS OF USE</li>
+                    <li>PARTNERS</li>
+                    <li>BEYOND THE GRID</li>
+                    <li>INNOVATION </li>
+                </ul>
+            </div>
+        </footer>
     </div>
     <script>
-            function openProfile(event, teamName) {
-          // Declare all variables
-          let i, profileContainer, f1Team;
-        
-          // Get all elements with class="profileContainer" and hide them
-          profileContainer = document.getElementsByClassName("profileContainer");
-          for (i = 0; i < profileContainer.length; i++) {
-            profileContainer[i].style.display = "none";
-          }
-        
-          // Get all elements with class="f1Team" and remove the class "active"
-          f1Team = document.getElementsByClassName("f1Team");
-          for (i = 0; i < f1Team.length; i++) {
-            f1Team[i].className = f1Team[i].className.replace(" active", "");
-          }
-        
-          // Show the current tab, and add an "active" class to the button that opened the tab
-          document.getElementById(teamName).style.display = "block";
-          evt.currentTarget.className += " active";
+        function openProfile(event, teamName) {
+            // Declare all variables
+            let i, profileContainer, f1Team;
+
+            // Get all elements with class="profileContainer" and hide them
+            profileContainer = document.getElementsByClassName("profileContainer");
+            for (i = 0; i < profileContainer.length; i++) {
+                profileContainer[i].style.display = "none";
+            }
+
+            // Get all elements with class="f1Team" and remove the class "active"
+            f1Team = document.getElementsByClassName("f1Team");
+            for (i = 0; i < f1Team.length; i++) {
+                f1Team[i].className = f1Team[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(teamName).style.display = "block";
+            evt.currentTarget.className += " active";
         }
         //find default open and click
         document.getElementById("defaultOpen").click();
-            </script>
+    </script>
 </body>
+
 </html>
