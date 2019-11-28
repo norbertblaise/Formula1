@@ -1,77 +1,91 @@
-html,body{
+html, body {
     height: auto;
     min-height: 100%;
     margin: 0;
 }
-body{
+
+body {
     font-size: 17px;
-    font-family: "Titillium Web";
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 23px;
 }
-.main{
+
+.main {
     padding: 0px !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
-.navlist{
+
+.navlist {
     position: relative;
 }
-.navlist a{
+
+.navlist a {
     float: left;
     color: #fff;
     text-decoration: none;
     padding: 10px 8px 13px 13px;
     font-size: 20px;
-    transition:all linear 0.15s;
+    transition: all linear 0.15s;
 }
-.navlist .arrow{
+
+.navlist .arrow {
     font-size: 15px;
     line-height: 0%;
 }
-li .navlist{
+
+li .navlist {
     padding: 10px 10px 10px 0px;
 }
 
-
-.navlist a:hover{
+.navlist a:hover {
     color: #fff;
     background: #15151E;
     text-decoration: none;
-    
 }
- .navlist ul{
+
+.navlist ul {
     list-style-type: none;
     display: flex;
     margin: 0px;
 }
-a.active .linkText{
+
+a.active .linkText {
     padding: 0px 10px 10px 0px;
     border: 1px solid white;
     border-top: 0;
     border-left: 0;
     border-bottom-right-radius: 10px;
 }
+
 /*styling drop down*/
 .dropdown{
-    list-style-type: none;
-    display: inline-block;
-    top: 100%;
-    left: 0px;
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity linear 0.15s;
-    background: #15151E;
-    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+.dropdownContent {
+   display: none;
+   position: absolute;
+   width: 100%;
+   background-color: #15151E;
+   z-index: 1;
+   left: 0;
+}
+/* show dropdown on hover */
+#standings:hover + .dropdownContent{
+    display: block;
 }
 
-.navHeader .navlist .stand:hover ~ .dropdown{
+.navHeader .navlist .stand:hover~.dropdown {
     z-index: 1;
     opacity: 1;
-    }
-.dropdown li{
+}
+
+.dropdown li {
     position: relative;
     display: inline-block;
-}    
-a.active .linkText:hover{
+}
+
+a.active .linkText:hover {
     padding: 0px 10px 10px 0px;
     border: 1px solid #15151E;
     border-top: 0;
@@ -79,110 +93,121 @@ a.active .linkText:hover{
     border-bottom-right-radius: 10px;
 }
 
-.navHeader{
+.navHeader {
     background: #e10600;
     color: #fff;
+}
+
+.loginNavHeader {
+    background: #333333;
 }
 
 img {
     width: 100%;
     height: auto;
     display: block;
-
 }
-#logo{
+
+#logo {
     padding: 10px;
     width: 80%;
-
 }
 
 /*styling the footer*/
-.f1-footer{
+
+.f1-footer {
     background-color: #15151E;
     color: #fff;
 }
-.f1-footer ul{
+
+.f1-footer ul {
     list-style-type: none;
-    
 }
+
 /*coloring font awesome icons and all footer links*/
-.f1-footer a{
+
+.f1-footer a {
     color: #fff;
     text-decoration: none;
     padding-bottom: 3px;
     border-bottom: 3px;
-    
 }
 
-
-.f1-footer a:hover, .dropdown a:hover{
+.f1-footer a:hover, .dropdown a:hover {
     color: #fff;
     text-decoration: none;
     border-bottom: 3px solid #e10600;
     padding-bottom: 0px;
 }
+
 /*resizing font awesome icons*/
 
-.social{
-    float:right;
+.social {
+    float: right;
     text-align: right;
-    justify-content: space-between;    
+    justify-content: space-between;
     color: #fff;
     height: 100%;
     font-size: 20px;
 }
-.icon{
-    
-}
 
-.f1-footer-top{
+.icon {}
+
+.f1-footer-top {
     background-color: #38383f;
     padding-top: 10px;
 }
-.f1-footer-middle{
+
+.f1-footer-middle {
     padding-top: 5px;
     margin: 20px;
-    border-bottom: 10px  solid #38383f;
+    border-bottom: 10px solid #38383f;
     border-right: 10px solid #38383f;
     border-bottom-right-radius: 15px;
     background: #15151E;
 }
+
 /*style the bottom nav*/
-.navbottom{
+
+.navbottom {
     padding-bottom: 10px;
     margin: 0;
-   
 }
-.navbottom a{
-    padding-left:10px;
+
+.navbottom a {
+    padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 5px;
     margin: 0px 10px;
     font-size: 20px;
 }
 
-.f1-footer-bottom{
+.f1-footer-bottom {
     margin-left: 20px;
 }
-.bottomlist{
-   padding-left: 0px;
+
+.bottomlist {
+    padding-left: 0px;
     margin-bottom: 0px;
 }
-.bottomlist ul{
+
+.bottomlist ul {
     list-style-type: none;
-    padding-left: 0px ;
+    padding-left: 0px;
 }
-.bottomlist li{
+
+.bottomlist li {
     padding: 10px 25px 10px 0px;
     font-size: 12px;
 }
-.storeLink{
+
+.storeLink {
     width: 135px;
     height: 40px;
     margin-left: 10px;
 }
 
-.label{
+.label {
     font-size: 11px;
     line-height: 14px;
     letter-spacing: 0.5px;
@@ -190,7 +215,7 @@ img {
     color: #e10600;
 }
 
-.storeLabel{
+.storeLabel {
     max-width: 105px;
     margin: 4px 0px;
     color: #fff;

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="login.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,6 +11,12 @@
 </head>
 <body>
     <div class="main">
+            <div class="navHeader loginNavHeader d-flex">
+                    <div class="col-md-2">
+                        <img id="logo" src="f1_logo_red.svg" alt="">
+                    </div>
+                    
+                </div>
        <!-- <div class="login active">
             <form>
                 <label for="username">Username: </label>
@@ -19,10 +26,11 @@
                 <input type="submit" name="login" value="Login">
             </form>
         </div>-->
-        <hr>
-        <div class="signup">
+        
+        <div class="signup col-md-5 offset-md-3">
             <!--use onsubmit to call the validate function-->
             <form id="regForm" action="index.html" onsubmit="validate()">
+                <h1>SIGN UP</h1>
             <label for="fName">First Name</label>
             <input type="text" name="fName" id="fName">
             <label for="lName">Last Name</label>
