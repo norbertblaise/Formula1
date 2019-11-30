@@ -28,10 +28,6 @@ body {
     transition: all linear 0.15s;
 }
 
-.navlist .arrow {
-    font-size: 15px;
-    line-height: 0%;
-}
 
 li .navlist {
     padding: 10px 10px 10px 0px;
@@ -58,30 +54,32 @@ a.active .linkText {
 }
 
 /*styling drop down*/
+.standings{
+    position: relative;
+}
 .dropdown{
     float: left;
     overflow: hidden;
 }
-.dropdownContent {
+.dropdown-content {
    display: none;
    position: absolute;
    width: 100%;
    background-color: #15151E;
    z-index: 1;
    left: 0;
+   right: 0;
 }
 /* show dropdown on hover */
-#standings:hover + .dropdownContent{
-    display: block;
+.dropdown:hover  .dropdown-content{
+    display: flex;
+    width: 100%;
 }
 
-.navHeader .navlist .stand:hover~.dropdown {
-    z-index: 1;
-    opacity: 1;
-}
+
 
 .dropdown li {
-    position: relative;
+    position: absolute;
     display: inline-block;
 }
 
@@ -96,6 +94,10 @@ a.active .linkText:hover {
 .navHeader {
     background: #e10600;
     color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .loginNavHeader {

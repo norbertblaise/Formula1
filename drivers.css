@@ -1,109 +1,146 @@
 @import url(headerFooter.css);
-
-.main{
+.main {
     background: rgb(236, 235, 235);
 }
+
+.driversContainer {
+    padding-top: 70px;
+}
+
+/* prevent driverProfile from scrolling off page */
+.driverProfileWrapper{
+    min-height: 100%;
+    align-items: center;
+}
+.driverProfile {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4rem;
+    right: 0;
+    z-index: 2;
+    
+}
+
 /*make drivers appear in two columns*/
-.driversList{
+
+.driversList {
     display: flex;
     flex-wrap: wrap;
 }
 
-.f1Driver{
+.f1Driver {
     border-right: 2px solid;
     border-bottom: 2px solid;
     border-color: transparent;
     width: 50%;
     overflow: hidden;
 }
+
 /* style the driver pics */
+
 .driverPic {
     height: 200px;
     overflow: hidden;
     transition: .4s;
     transform: scale(1.1);
 }
-.driverDetails{
+
+.driverDetails {
     background: #fff;
     overflow: visible;
     position: relative;
     margin-top: -20px;
     padding: 35px 40px;
 }
+
 /* add the zoom effect */
-.f1Driver:hover> .driverPic{
+
+.f1Driver:hover>.driverPic {
     transform: scale(1.19);
     cursor: pointer;
 }
-.f1Driver:hover > .driverDetails{
+
+.f1Driver:hover>.driverDetails {
     background: rgb(4, 4, 10);
     color: #fff;
     cursor: pointer;
 }
-.driverNum{
+
+.driverNum {
     font-size: 28px;
     font-weight: bolder;
     margin-bottom: 25px;
 }
-.driverName{
+
+.driverName {
     font-size: 20px;
     font-weight: 600;
     margin: 0;
 }
 
-.driverTeam{
-font-size: 14px;
-font-weight: 500;
-color: #808080;
+.driverTeam {
+    font-size: 14px;
+    font-weight: 500;
+    color: #808080;
 }
+
 /* styling driver profile */
-table{
+
+table {
     width: 100%;
     font-size: 18px;
-    
 }
-th{
+
+th {
     font-weight: bolder;
     padding: 0px 15px;
 }
-tr{
-padding-left: 15px;
+
+tr {
+    padding-left: 15px;
 }
-.profileWrapper{
+
+.profileWrapper {
     background: #fff;
-    
 }
-h1{
+
+h1 {
     padding: 15px;
     padding-left: 30px;
     font-size: 48px !important;
 }
-.driverPicLarge{
+
+.driverPicLarge {
     width: 100%;
 }
-.flag{
+
+.flag {
     height: 38px;
     width: auto;
     border-radius: 5px;
     margin-top: 12px;
     margin-left: 8px;
 }
-.numFlag .driverNum{
-font-size: 42px;
-padding-right: 10px;
-margin-bottom: 0px;
+
+.numFlag .driverNum {
+    font-size: 42px;
+    padding-right: 10px;
+    margin-bottom: 0px;
 }
-.numFlag{
+
+.numFlag {
     margin-bottom: -15px;
 }
-.profileHeading .driverName{
+
+.profileHeading .driverName {
     font-size: 42px;
     margin-bottom: 10px;
 }
-.profileHeading{
+
+.profileHeading {
     padding: 0px 15px;
 }
-.helmet{
+
+.helmet {
     width: 100%;
 }
-

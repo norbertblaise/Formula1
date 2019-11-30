@@ -15,30 +15,26 @@
 <body>
     <div class="main col-12">
         <div class="navHeader d-flex">
-            <!--  <nav>
-                <button class="navitem" >Latest</button>
-                <button class="navitem" >Standings</button>
-                <button class="navitem" >Drivers</button>
-                <button class="navitem" >Teams</button>
-                <button class="navitem" >Races</button>
-                <button class="navitem" ></button>
-            </nav>
-        -->
+
             <div class="col-md-2">
                 <img id="logo" src="f1_logo.svg" alt="">
             </div>
             <div class="navlist col-md-6">
 
                 <a class="active" href="index.html"><span class="linkText">Latest</span></a>
-                <div class="dropdown">
-                        <a class="navlink standings" id="standings" href="standings.html"><span class="linkText">Standings<span
-                            class="arrow">&#9660;</span></span></a>
-                <div class="dropdownContent">
-                    <a class="navlink" href="standings.html"><span class="linkText">2019 Season</span></a>
-                    <a class="navlink" href="driversChampionship.html"><span class="linkText">Drivers
-                            Standings</span></a>
-                    <a class="navlink" href="constructors.html"><span class="linkText">Constructor Standings</span></a>
-                </div>
+                <div class="dropdown" data-toggle="dropdown">
+                    <a class="navlink standings" id="standings" href="standings.html"><span class="linkText">Standings
+                            <i class="fa fa-caret-down"></i></span></a>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li> <a class="navlink" href="standings.html"><span class="linkText">2019 Season</span></a>
+                            </li>
+                            <li><a class="navlink" href="driversChampionship.html"><span class="linkText">Drivers
+                                        Standings</span></a></li>
+                            <li><a class="navlink" href="constructors.html"><span class="linkText">Constructor
+                                        Standings</span></a></li>
+                        </ul>
+                    </div>
                 </div>
                 <a class="navlink" href="drivers.html"><span class="linkText">Drivers</span></a>
                 <a class="navlink" href="Teams.html"><span class="linkText">Teams</span></a>
@@ -47,10 +43,15 @@
         </div>
 
         <div class="newsContainer col-12 d-flex">
-            <div class="topStory col-6">
-                <h1>5 Reasons we love the Brazilian Grand Prix</h1>
-                <div class="storyImage">
-                    <img src="brazilgp.jpg" alt="Brazilian Grand Prix">
+            <div class="topStoryWrapper col-6">
+                <div class="topStory ">
+                    <a href="why-we-love-brazil.html" class="topStoryLink">
+
+                        <h1>5 Reasons we love the Brazilian Grand Prix</h1>
+                        <div class="storyImage">
+                            <img src="brazilgp.jpg" alt="Brazilian Grand Prix">
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="otherNewsContainer col-6  d-flex">
@@ -91,7 +92,7 @@
                         </div>
                         <div class="caption">
                             <p class="label">NEWS</p>
-                            <p>Abiteboul: Need for 'Stronger technical leadership' sparked Renault aero restructure.
+                            <p style="margin-bottom: 0px;">Abiteboul: Need for 'Stronger technical leadership' sparked Renault aero restructure.
                             </p>
                         </div>
                     </a>
