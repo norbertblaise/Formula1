@@ -20,18 +20,25 @@
             </div>
 
         </div>
-        
+      
 
         <div class="signup col-md-5 offset-md-3">
-            <form id="logForm">
-                <h1>LOG IN</h1>
-                <label for="email"> Email</label>
-                <input type="text" name="email" id="email">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password">
-                <input type="button" name="log in" id="login" value="Login" onclick="validate()">
-                <a href="register.html" class="swapForm" >Dont'
-                    have an account?</a>
+            <!--use onsubmit to call the validate function-->
+            <form id="regForm">
+                <h1>SIGN UP</h1>
+                <label for="fName">First Name</label>
+                <input type="text" name="fName" id="fName">
+                <label for="lName">Last Name</label>
+                <input type="text" name="lName" id="lName">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="passReg">Password</label>
+                <input type="password" name="passReg" id="passReg">
+                <label for="rePassReg">Re-Enter Password</label>
+                <input type="password" name="rePassReg" id="rePassReg">
+                <input type="button" name="sign up" value="Sign Up" id="signup" onclick="validate()" />
+                <a href="login.html">Already Have an account?</a>
+
             </form>
         </div>
     </div>
@@ -39,21 +46,14 @@
         //function to validate the sign up form
         function validate() {
 
-            let password = document.getElementById("password").value;
+            let password = document.getElementById("passReg").value;
+            let rePass = document.getElementById("rePassReg").value;
+            let lName = document.getElementById("lName").value;
+            let fName = document.getElementById("fName").value;
             let email = document.getElementById("email").value;
+            let signup = document.getElementById("signup");
+            let action = document.getElementById("regForm");
 
-
-            if(email === "" && password == ""){
-alert("Please enter your password and email");
-            }else if(email == ""){
-                alert("Please enter Your email");
-            }else if(password ==""){
-                alert("please enter your password");
-            }else if(email != "lewis.hamilton@mercedes.com" || password !="6timechamp"){
-                alert("incorrect password or email");
-            }else{
-                window.open('index.html', '_self');
-            }
             //compare both passwords input by user
             let passVal = password.localeCompare(rePass);
 
