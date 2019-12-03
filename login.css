@@ -11,6 +11,7 @@ input[type=text], input[type=email], input[type=password] {
 }
 
 .signup {
+    top: 3.3rem;
     padding: 15px 10px 10px 0px;
     padding-left: 0px !important;
     border-top: 10px solid #e10600;
@@ -19,7 +20,7 @@ input[type=text], input[type=email], input[type=password] {
     margin-top: 40px;
 }
 
-input[type=submit] {
+input[type=button] {
     color: #fff;
     background: #e10600;
     border: #e10600 2px solid;
@@ -29,7 +30,7 @@ input[type=submit] {
     padding: 5px;
 }
 
-input[type=submit]:hover {
+input[type=button]:hover {
     color: #e10600;
     background: #fff;
 }

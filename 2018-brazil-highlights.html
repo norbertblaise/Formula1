@@ -14,18 +14,37 @@
 
 <body>
     <div class="main col-12">
-        <div class="navHeader d-flex">
-            <div class="col-md-2">
-                <img id="logo" src="f1_logo.svg" alt="">
-            </div>
-            <div class="navlist col-md-6">
-                <a class="active" href="index.html"><span class="linkText">Latest</span></a>
-                <a class="navlink" href="standings.html"><span class="linkText">Standings</span></a>
-                <a class="navlink" href="drivers.html"><span class="linkText">Drivers</span></a>
-                <a class="navlink" href="Teams.html"><span class="linkText">Teams</span></a>
-                <a class="navlink" href="Races.html"><span class="linkText">Races</span></a>
-            </div>
-        </div>
+            <div class="navWrapper">
+                    <div class="f1-logo">
+                        <img id="logo" src="f1_logo.svg" alt="">
+                    </div>
+                    <div class="navHeader ">
+                        <div class="navlist" id="navlist">
+                            <a class="active" href="index.html"><span class="linkText">Latest</span></a>
+                            <a class="navlink standings" id="standings" href="standings.html"><span class="linkText">Standings
+                                    <i class="fa fa-caret-down"></i></span></a>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li> <a class="navlink" href="standings.html"><span class="linkText">2019 Season</span></a>
+                                    </li>
+                                    <li><a class="navlink" href="driversChampionship.html"><span class="linkText">Drivers
+                                                Standings</span></a></li>
+                                    <li><a class="navlink" href="constructors.html"><span class="linkText">Constructor
+                                                Standings</span></a></li>
+                                </ul>
+                            </div>
+                            <a class="navlink" href="drivers.html"><span class="linkText">Drivers</span></a>
+                            <a class="navlink" href="Teams.html"><span class="linkText">Teams</span></a>
+                            
+        
+                            <a href="javascript:void(0);" class="hamburger" onclick="toggleNav()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+        
+                        </div>
+        
+                    </div>
+                </div>
         <div class="videoArticle">
             <div class="articleTitle col-lg-8 offset-xl-1">
                 <p class="tag">VIDEO</p>
@@ -97,73 +116,74 @@
             <a href="#" class="tag">BRAZIL</a>
         </div>
         <footer class="f1-footer">
-            <div class="f1-footer-top d-flex">
-                <p class="label storeLabel ">DOWNLOAD THE OFFICIAL F1 APP</p>
-                <ul class="d-flex">
-                    <li class="storeLink">
-                        <a
-                            href="https://play.google.com/store/apps/details?id=com.softpauer.f1timingapp2014.basic&hl=en_GB">
-                            <img
-                                src="https://www.formula1.com/etc/designs/fom-website/images/svg/google-play-badge.svg">
+                <div class="f1-footer-top d-flex">
+                    <p class="label storeLabel ">DOWNLOAD THE OFFICIAL F1 APP</p>
+                    <ul class="d-flex">
+                        <li class="storeLink">
+                            <a
+                                href="https://play.google.com/store/apps/details?id=com.softpauer.f1timingapp2014.basic&hl=en_GB">
+                                <img
+                                    src="https://www.formula1.com/etc/designs/fom-website/images/svg/google-play-badge.svg">
+                            </a>
+                        </li>
+                        <li class="storeLink">
+                            <a href="https://www.formula1.com/etc/designs/fom-website/images/svg/google-play-badge.svg">
+                                <img src="https://www.formula1.com/etc/designs/fom-website/images/svg/download-on-the-app-store-apple.svg"
+                                    alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="social col-md-5 ml-auto">
+                        <!-- <ul class=" d-table float-md-right d-flex">-->
+    
+                        <a href="https://www.facebook.com/Formula1">
+                            <i class="icon fab fa-facebook-square fa-2x"></i>
                         </a>
-                    </li>
-                    <li class="storeLink">
-                        <a href="https://www.formula1.com/etc/designs/fom-website/images/svg/google-play-badge.svg">
-                            <img src="https://www.formula1.com/etc/designs/fom-website/images/svg/download-on-the-app-store-apple.svg"
-                                alt="">
+    
+    
+                        <a href="https://twitter.com/f1">
+                            <i class="icon fab fa-twitter-square fa-2x"></i>
                         </a>
-                    </li>
-                </ul>
-                <div class="social col-md-5 ml-auto">
-                    <!-- <ul class=" d-table float-md-right d-flex">-->
-
-                    <a href="https://www.facebook.com/Formula1">
-                        <i class="icon fab fa-facebook-square fa-2x"></i>
-                    </a>
-
-
-                    <a href="https://twitter.com/f1">
-                        <i class="icon fab fa-twitter-square fa-2x"></i>
-                    </a>
-
-
-                    <a href="https://www.instagram.com/f1/">
-                        <i class="icon fab fa-instagram fa-2x"></i>
-                    </a>
-
-
-                    <a href="https://www.youtube.com/F1">
-                        <i class="icon fab fa-youtube-square fa-2x"></i>
-                    </a>
-
-                    <!--</ul>-->
+    
+    
+                        <a href="https://www.instagram.com/f1/">
+                            <i class="icon fab fa-instagram fa-2x"></i>
+                        </a>
+    
+    
+                        <a href="https://www.youtube.com/F1">
+                            <i class="icon fab fa-youtube-square fa-2x"></i>
+                        </a>
+    
+                        <!--</ul>-->
+                    </div>
                 </div>
-            </div>
-            <div class="f1-footer-middle ">
-                <div class="navbottom  navlist d-flex offset-md-3">
-
-                    <a class="bottomNavLink" href="index.html">Latest</a>
-                    <a class="bottomNavLink active" href="standings.html">Standings</a>
-                    <a class="bottomNavLink" href="drivers.html">Drivers</a>
-                    <a class="bottomNavLink" href="Teams.html">Teams</a>
-                    <a class="bottomNavLink" href="Races.html">Races</a>
-
+                <div class="f1-footer-middle ">
+                    <div class="navbottom  navlist d-flex">
+    
+                        <a class="bottomLinks active" href="#">Latest</a>
+                        <a class="bottomLinks" href="standings.html">Standings</a>
+                        <a class="bottomLinks" href="drivers.html">Drivers</a>
+                        <a class="bottomLinks" href="Teams.html">Teams</a>
+                        <a class="bottomLinks" href="Races.html">Races</a>
+    
+                    </div>
                 </div>
-            </div>
-            <div class="f1-footer-bottom">
-                <ul class="bottomlist d-flex offset-md-2">
-                    <li>CONTACT</li>
-                    <li>FAQ</li>
-                    <li>PRIVACY POLICY</li>
-                    <li>GUIDLINES</li>
-                    <li>TERMS OF USE</li>
-                    <li>PARTNERS</li>
-                    <li>BEYOND THE GRID</li>
-                    <li>INNOVATION </li>
-                </ul>
-            </div>
-        </footer>
+                <div class="f1-footer-bottom">
+                    <ul class="bottomlist d-flex offset-md-2">
+                        <li>CONTACT</li>
+                        <li>FAQ</li>
+                        <li>PRIVACY POLICY</li>
+                        <li>GUIDLINES</li>
+                        <li>TERMS OF USE</li>
+                        <li>PARTNERS</li>
+                        <li>BEYOND THE GRID</li>
+                        <li>INNOVATION </li>
+                    </ul>
+                </div>
+            </footer>
     </div>
+    <script src="responsiveNav.js"></script>
 </body>
 
 </html>

@@ -14,18 +14,37 @@
 
 <body>
     <div class="main col-12">
-        <div class="navHeader d-flex">
-            <div class="col-md-2">
-                <img id="logo" src="f1_logo.svg" alt="">
-            </div>
-            <div class="navlist col-md-6">
-                <a class="navlink" href="index.html"><span class="linkText">Latest</span></a>
-                <a class="navlink" href="standings.html"><span class="linkText">Standings</span></a>
-                <a class="navlink" href="drivers.html"><span class="linkText">Drivers</span></a>
-                <a class="navlink" href="Teams.html"><span class="linkText">Teams</span></a>
-                <a class="active" href="Races.html"><span class="linkText">Races</span></a>
-            </div>
-        </div>
+            <div class="navWrapper">
+                    <div class="f1-logo">
+                        <img id="logo" src="f1_logo.svg" alt="">
+                    </div>
+                    <div class="navHeader ">
+                        <div class="navlist" id="navlist">
+                            <a class="active" href="index.html"><span class="linkText">Latest</span></a>
+                            <a class="navlink standings" id="standings" href="standings.html"><span class="linkText">Standings
+                                    <i class="fa fa-caret-down"></i></span></a>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li> <a class="navlink" href="standings.html"><span class="linkText">2019 Season</span></a>
+                                    </li>
+                                    <li><a class="navlink" href="driversChampionship.html"><span class="linkText">Drivers
+                                                Standings</span></a></li>
+                                    <li><a class="navlink" href="constructors.html"><span class="linkText">Constructor
+                                                Standings</span></a></li>
+                                </ul>
+                            </div>
+                            <a class="navlink" href="drivers.html"><span class="linkText">Drivers</span></a>
+                            <a class="navlink" href="Teams.html"><span class="linkText">Teams</span></a>
+                            
+        
+                            <a href="javascript:void(0);" class="hamburger" onclick="toggleNav()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+        
+                        </div>
+        
+                    </div>
+                </div>
         <footer class="f1-footer">
             <div class="f1-footer-top d-flex">
                 <p class="label storeLabel ">DOWNLOAD THE OFFICIAL F1 APP</p>

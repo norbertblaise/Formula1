@@ -14,15 +14,13 @@
 
 <body>
     <div class="main col-12">
-        <div class="navHeader d-flex">
-
-            <div class="col-md-2">
+        <div class="navWrapper">
+            <div class="f1-logo">
                 <img id="logo" src="f1_logo.svg" alt="">
             </div>
-            <div class="navlist col-md-6">
-
-                <a class="active" href="index.html"><span class="linkText">Latest</span></a>
-                <div class="dropdown" data-toggle="dropdown">
+            <div class="navHeader ">
+                <div class="navlist" id="navlist">
+                    <a class="active" href="index.html"><span class="linkText">Latest</span></a>
                     <a class="navlink standings" id="standings" href="standings.html"><span class="linkText">Standings
                             <i class="fa fa-caret-down"></i></span></a>
                     <div class="dropdown-content">
@@ -35,10 +33,16 @@
                                         Standings</span></a></li>
                         </ul>
                     </div>
+                    <a class="navlink" href="drivers.html"><span class="linkText">Drivers</span></a>
+                    <a class="navlink" href="Teams.html"><span class="linkText">Teams</span></a>
+                    
+
+                    <a href="javascript:void(0);" class="hamburger" onclick="toggleNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+
                 </div>
-                <a class="navlink" href="drivers.html"><span class="linkText">Drivers</span></a>
-                <a class="navlink" href="Teams.html"><span class="linkText">Teams</span></a>
-                <a class="navlink" href="Races.html"><span class="linkText">Races</span></a>
+
             </div>
         </div>
 
@@ -92,7 +96,8 @@
                         </div>
                         <div class="caption">
                             <p class="label">NEWS</p>
-                            <p style="margin-bottom: 0px;">Abiteboul: Need for 'Stronger technical leadership' sparked Renault aero restructure.
+                            <p style="margin-bottom: 0px;">Abiteboul: Need for 'Stronger technical leadership' sparked
+                                Renault aero restructure.
                             </p>
                         </div>
                     </a>
@@ -184,7 +189,7 @@
                 </div>
             </div>
             <div class="f1-footer-middle ">
-                <div class="navbottom  navlist d-flex offset-md-3">
+                <div class="navbottom  navlist d-flex">
 
                     <a class="bottomLinks active" href="#">Latest</a>
                     <a class="bottomLinks" href="standings.html">Standings</a>
@@ -206,44 +211,10 @@
                     <li>INNOVATION </li>
                 </ul>
             </div>
-            <div class="f1-footer-baseline"></div>
         </footer>
     </div>
+    <script src="responsiveNav.js"></script>
+
 </body>
 
 </html>
-
-<div class="navbar">
-    <a href="#home">Home</a>
-    <a href="#news">News</a>
-    <div class="dropdown">
-        <button class="dropbtn">Dropdown
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <div class="header">
-                <h2>Mega Menu</h2>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <h3>Category 1</h3>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-                <div class="column">
-                    <h3>Category 2</h3>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-                <div class="column">
-                    <h3>Category 3</h3>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div

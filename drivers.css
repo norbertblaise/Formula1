@@ -8,9 +8,9 @@
 }
 
 /* prevent driverProfile from scrolling off page */
-.driverProfileWrapper{
+.driverInfoWrapper{
     min-height: 100%;
-    align-items: center;
+    align-items: flex-start;
 }
 .driverProfile {
     position: -webkit-sticky;
