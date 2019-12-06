@@ -8,17 +8,21 @@
 }
 
 /* prevent driverProfile from scrolling off page */
-.driverInfoWrapper{
+
+.driverInfoWrapper {
     min-height: 100%;
     align-items: flex-start;
 }
+
 .driverProfile {
     position: -webkit-sticky;
     position: sticky;
+    height: 100vh;
+    overflow-y: scroll;
+    /*allove vertical scroll */
     top: 4rem;
     right: 0;
     z-index: 2;
-    
 }
 
 /*make drivers appear in two columns*/
