@@ -18,8 +18,7 @@
     position: -webkit-sticky;
     position: sticky;
     height: 100vh;
-    overflow-y: scroll;
-    /*allove vertical scroll */
+    overflow-y: scroll; /*allow vertical scroll */
     top: 4rem;
     right: 0;
     z-index: 2;
